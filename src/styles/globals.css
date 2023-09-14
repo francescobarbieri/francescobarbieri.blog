@@ -51,11 +51,13 @@ main {
 }
 
 .headerWrapper {
-    width: 3rem;
+    display: none;
 }
 
 .mainWrapper {
-    width: 64rem;
+    width: calc(100% - 1rem);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     display: flex;
     align-items: flex-start;
     -webkit-box-align: start;
@@ -68,5 +70,12 @@ main {
 @media screen and (min-width: 1265px) {
     .headerWrapper {
         width: 17rem;
+        display: block;
+    }
+
+    .mainWrapper {
+        width: 64rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
 }

@@ -1,0 +1,32 @@
+.button {
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: var(--main-blue);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease-in-out;
+}
+
+.icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.slideIn {
+    right: 2rem; 
+}
+
+.slideOut {
+    right: -5rem;
+}
+
+@media screen and (min-width: 1265px) {
+    .button {
+        display: none;
+    }
+}

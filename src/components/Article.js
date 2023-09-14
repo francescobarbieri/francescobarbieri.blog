@@ -20,8 +20,6 @@ export default function Article () {
                 <Icon 
                     name="circle"
                     fill="#000"
-                    width="54"
-                    height="54"
                 />
             </div>
             <div className={clsx(styles.title, robotoSlab.className)}>

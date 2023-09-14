@@ -1,6 +1,6 @@
-import Collections from '@/components/Collections'
 import Feed from '@/components/Feed'
 import Sidebar from '@/components/Sidebar'
+import SidebarButton from '@/components/SidebarButton'
 
 export const metadata = {
   title: 'Francesco Barbieri',
@@ -17,6 +17,7 @@ export default function Home() {
       </header>
       <main>
         <div className="mainWrapper">
+          <SidebarButton />
           <Feed />
           {/* <Collections /> */}
         </div>

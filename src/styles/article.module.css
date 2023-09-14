@@ -1,7 +1,7 @@
 .article {
     max-width: 614px;
     display: grid;
-    grid-template-columns: 3.375rem auto;
+    grid-template-columns: auto;
     grid-template-rows: 1.5625rem ;
     column-gap: 1.5rem;
 }
@@ -35,6 +35,7 @@
 }
 
 .icon {
+    display: none;
     grid-area: 2 / 1 / 2 / 3;
     align-self: center
 }
@@ -50,4 +51,15 @@
     width: 100%;
     font-size: 1.125rem;
     color: var(--text-color);
+}
+
+@media screen and (min-width: 1265px) {
+    .article {
+        grid-template-columns: 3.375rem auto;
+    }
+
+    .icon {
+        height: 3.375rem;
+        width: 3.375rem;
+    }
 }
