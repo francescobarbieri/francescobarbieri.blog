@@ -1,6 +1,6 @@
-import Collections from '@/components/Collections'
-import Feed from '@/components/Feed'
 import Sidebar from '@/components/Sidebar'
+import SidebarButton from '@/components/SidebarButton'
+import About from "@/components/About"
 
 export const metadata = {
   title: 'Francesco Barbieri',
@@ -11,12 +11,14 @@ export default function Home() {
   return (
     <div className='container'>
       <header>
-        <div className="headerWrapper">
+        <div className="headerWrapper" id="header">
           <Sidebar />
         </div>
       </header>
       <main>
-        <div className="mainWrapper">
+        <div className="mainWrapper" id="mainWrapper">
+          <SidebarButton />
+          <About />
           {/* <Collections /> */}
         </div>
       </main>

@@ -68,6 +68,8 @@ main {
 
 .mainWrapper {
     width: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     align-items: flex-start;
     -webkit-box-align: start;
@@ -86,6 +88,8 @@ main {
 
     .mainWrapper {
         width: 64rem;
+        min-width: unset;
+        min-height: unset;
         padding-left: 0rem;
         padding-right: 0rem;
     }

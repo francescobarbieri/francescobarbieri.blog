@@ -43,6 +43,7 @@
     height: fit-content;
     margin-bottom: 2rem;
     padding-left: 1rem;
+    margin-top: 3rem;
     color: var(--light-text-color);
     font-size: 0.875rem;
 }

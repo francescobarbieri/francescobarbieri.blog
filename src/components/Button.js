@@ -2,6 +2,7 @@ import styles from "@/styles/button.module.css"
 import Icon from "./Icon"
 import Link from "next/link"
 import clsx from "clsx";
+import { useState } from "react";
 
 export default function Button({ text, iconType, href, active }) {
 
@@ -18,6 +19,7 @@ export default function Button({ text, iconType, href, active }) {
                 fill="#000"
                 width="26"
                 height="26"
+                className={styles.icon}
             />
 
             <div className={styles.text}>

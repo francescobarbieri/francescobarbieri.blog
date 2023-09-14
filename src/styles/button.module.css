@@ -29,5 +29,5 @@
 }
 
 .selected .icon {
-    fill: var(--main-blue);
+    fill: #fff;
 }
