@@ -52,7 +52,7 @@ export default function SidebarButton () {
             document.getElementById("header").classList.add("hideHeader")
 
             // Lock scrolling
-            document.getElementById('body').style.overflow = "show"
+            document.getElementById('body').style.overflow = "visible"
 
             // Icon rotation
             document.getElementById("sidebarButtonIcon").classList.remove(styles.rotateIcon)
