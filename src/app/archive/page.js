@@ -17,7 +17,6 @@ export default function Home() {
       </header>
       <main>
         <div className="mainWrapper">
-          <Feed />
           {/* <Collections /> */}
         </div>
       </main>

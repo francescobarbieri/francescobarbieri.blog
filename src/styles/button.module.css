@@ -1,0 +1,40 @@
+.container {
+    width: calc(100% - 2rem);
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.125rem;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.container:hover {
+    background-color: rgb(227, 229, 232);
+}
+
+.text {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    display: none;
+}
+
+.selected {
+    background-color: var(--main-blue);
+    color: #fff;
+}
+
+.selected .icon {
+    fill: var(--main-blue);
+}
+
+@media screen and (min-width: 1265px) {
+    .text {
+        display: block;
+    }
+}

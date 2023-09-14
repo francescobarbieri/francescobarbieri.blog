@@ -1,0 +1,8 @@
+.feed {
+    margin-top: 2rem;
+    height: fit-content;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
