@@ -21,7 +21,6 @@
     font-size: 1.25rem;
     font-weight: normal;
     text-transform: capitalize;
-    display: none;
 }
 
 .selected {
@@ -31,10 +30,4 @@
 
 .selected .icon {
     fill: var(--main-blue);
-}
-
-@media screen and (min-width: 1265px) {
-    .text {
-        display: block;
-    }
 }

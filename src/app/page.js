@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <div className='container'>
       <header>
-        <div className="headerWrapper">
+        <div className="headerWrapper" id="header">
           <Sidebar />
         </div>
       </header>
       <main>
-        <div className="mainWrapper">
+        <div className="mainWrapper" id="mainWrapper">
           <SidebarButton />
           <Feed />
           {/* <Collections /> */}

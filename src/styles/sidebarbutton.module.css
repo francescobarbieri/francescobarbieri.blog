@@ -9,12 +9,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: right 0.3s ease-in-out;
+    transition: right 0.2s ease;
+    z-index: 4;
 }
 
 .icon {
     height: 1.5rem;
     width: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.rotateIcon {
+    transform: rotate(180deg);
 }
 
 .slideIn {

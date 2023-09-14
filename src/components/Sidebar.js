@@ -5,13 +5,14 @@ import styles from "@/styles/sidebar.module.css"
 import Button from "./Button"
 import NewsletterButton from "./NewsletterButton"
 import Heading from "./Heading"
+import clsx from "clsx";
 
 export default function Sidebar() {
 
     const pathName = usePathname();
 
     return (
-        <div className={styles.container}>
+        <div className={clsx(styles.container)} >
             <nav className={styles.buttonContainer}>
                 <Heading />
 
