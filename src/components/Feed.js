@@ -4,6 +4,7 @@ import styles from "@/styles/feed.module.css";
 import Article from "./Article";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import { fetchPosts } from "@/app/actions";
 
 export default function Feed() {
 
@@ -11,7 +12,8 @@ export default function Feed() {
     const [data, setData] = useState([<Article/>, <Article/>, <Article/>])
 
     function fetchMoreData() {
-        setData(data => [...data, <Article/>])
+        let fetchedArticle = fetchPosts();
+        setData(data => [...data, fetchedArticle])
     }
 
     useEffect(() => {
