@@ -19,7 +19,6 @@ export default function Home() {
         <div className="mainWrapper" id="mainWrapper">
           <SidebarButton />
           <Feed />
-          {/* <Collections /> */}
         </div>
       </main>
     </div>

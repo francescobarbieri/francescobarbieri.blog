@@ -57,7 +57,7 @@
     color: var(--text-color);
 }
 
-@media screen and (min-width: 1265px) {
+@media screen and (min-width: 700px) {
     .article {
         grid-template-columns: 3.375rem auto;
         width: 100%;

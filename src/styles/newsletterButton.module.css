@@ -18,3 +18,10 @@
     font-weight: normal;
     text-transform: capitalize;
 }
+
+
+@media screen and (min-width: 700px) and (max-width: 1499px)  {
+    .text {
+        display: none;
+    }
+}

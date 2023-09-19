@@ -31,7 +31,7 @@
     right: -5rem;
 }
 
-@media screen and (min-width: 1265px) {
+@media screen and (min-width: 700px) {
     .button {
         display: none;
     }

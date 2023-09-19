@@ -6,8 +6,13 @@
     gap: 2rem;
 }
 
+.loading {
+    height: 4rem;
+    width: 100%;
+    background-color: red;
+}
 
-@media screen and (min-width: 1265px) {
+@media screen and (min-width: 700px) {
     .feed {
         margin-left: 1.5rem;
     }

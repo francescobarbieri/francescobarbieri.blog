@@ -4,6 +4,7 @@ import At from "@/components/icons/at.svg";
 import Book from "@/components/icons/book.svg"; 
 import Person from "@/components/icons/person.svg";
 import ArrowBarRight from "@/components/icons/arrow-bar-right.svg";
+import Coin from '@/components/icons/coin.svg';
 
 const iconTypes = {
     circle: Circle,
@@ -12,6 +13,7 @@ const iconTypes = {
     book: Book,
     person: Person,
     arrowBarRight: ArrowBarRight,
+    coin: Coin,
 };
 
 const IconComponent = ({ name, ...props }) => {

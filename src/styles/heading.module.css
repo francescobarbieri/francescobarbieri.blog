@@ -9,6 +9,16 @@
     text-decoration: none;
 }
 
+.logo {
+    width: 100%;
+    background-image: url(/francescobarbierilogo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 1 / 1;
+    display: none;
+}
+
 .logoTxt {
     font-size: 1.625rem;
     font-weight: 600;
@@ -23,4 +33,18 @@
     font-smooth: antialiased;
     margin-block-start: 0.3rem;
     margin-block-end: 0rem;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1499px)  {
+    .logo {
+        display: block;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+    .logoTxt {
+        display: none;
+    }
 }

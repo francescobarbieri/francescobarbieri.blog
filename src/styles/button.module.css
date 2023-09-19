@@ -31,3 +31,16 @@
 .selected .icon {
     fill: #fff;
 }
+
+@media screen and (min-width: 700px) and (max-width: 1499px)  {
+    .container {
+        width: calc(100% - 1rem);
+        padding: 0.5rem;
+        aspect-ratio: 1 / 1;
+        justify-content: center;
+    }
+
+    .text {
+        display: none;
+    }
+}

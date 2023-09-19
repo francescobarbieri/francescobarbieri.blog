@@ -79,7 +79,23 @@ main {
     gap: 6.5em;
 }
 
-@media screen and (min-width: 1265px) {
+@media screen and (min-width: 700px) and (max-width: 1499px)  {
+    .headerWrapper {
+        left: 0rem;
+        width: 5rem;
+        display: flex;
+    }
+
+    .mainWrapper {
+        min-width: unset;
+        min-height: unset;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
     .headerWrapper {
         left: 0rem;
         width: 17rem;
