@@ -4,12 +4,15 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    position: relative;
 }
 
 .loading {
     height: 4rem;
     width: 100%;
-    background-color: red;
+    background-color: transparent;
+    position: absolute;
+    bottom: 20vh;
 }
 
 @media screen and (min-width: 700px) {

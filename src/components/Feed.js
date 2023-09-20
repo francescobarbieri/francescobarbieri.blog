@@ -5,6 +5,7 @@ import Article from "./Article";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { fetchInitialPosts, fetchPosts, getNextPost, getPaginatedPosts, initCache } from "@/app/actions";
+import Congratulations from "./Contratulations";
 
 export default function Feed({ initialPosts}) {
 
@@ -18,9 +19,14 @@ export default function Feed({ initialPosts}) {
             if(res === undefined) {
                 setEof(true)            
             } else {
-                const fetchedArticle = <Article />
-
-                setData(data => [...data, fetchedArticle])
+                setData(data => [...data, 
+                    <Article 
+                        title={res.title}
+                        tag={res.tag}
+                        date={res.date}
+                        content={res.fileContents}
+                    />
+                ])
             }
         })
     }
@@ -40,7 +46,7 @@ export default function Feed({ initialPosts}) {
                 )) : ''
             }
             {
-                eof ? <h1>STOP</h1> : ''
+                eof ? <Congratulations /> : ''
             }
 
             <div ref={ref} className={styles.loading}></div>

@@ -15,7 +15,12 @@ export default function Home() {
 
   fetchInitialPosts().then((res) => {
     res.map((i, index) => {
-      initialPosts.push(<Article />)
+      initialPosts.push(<Article 
+          title={i.title}
+          tag={i.tag}
+          date={i.date}
+          content={i.fileContents}
+        />)
     })
   })
 

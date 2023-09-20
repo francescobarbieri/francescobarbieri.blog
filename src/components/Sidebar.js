@@ -22,7 +22,7 @@ export default function Sidebar() {
                 />
                 <Button
                     text="finance"
-                    iconType="coin"
+                    iconType="finance"
                 />
                 <Button
                     text="AI / ML"

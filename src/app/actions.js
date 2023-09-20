@@ -17,6 +17,7 @@ export async function fetchPosts() {
 
         return {
             fileName,
+            fileContents,
             ...data,
         };
     });
@@ -38,6 +39,7 @@ export async function fetchInitialPosts() {
 
         return {
             fileName,
+            fileContents,
             ...data,
         };
     });
