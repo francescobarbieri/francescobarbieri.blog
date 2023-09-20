@@ -1,6 +1,8 @@
 import Feed from '@/components/Feed'
 import Sidebar from '@/components/Sidebar'
 import SidebarButton from '@/components/SidebarButton'
+import { fetchInitialPosts } from './actions'
+import Article from '@/components/Article'
 
 export const metadata = {
   title: 'Francesco Barbieri',
@@ -8,6 +10,15 @@ export const metadata = {
 }
 
 export default function Home() {
+
+  const initialPosts = [];
+
+  fetchInitialPosts().then((res) => {
+    res.map((i, index) => {
+      initialPosts.push(<Article />)
+    })
+  })
+
   return (
     <div className='container'>
       <header>
@@ -18,7 +29,7 @@ export default function Home() {
       <main>
         <div className="mainWrapper" id="mainWrapper">
           <SidebarButton />
-          <Feed />
+          <Feed initialPosts={initialPosts}  />
         </div>
       </main>
     </div>
