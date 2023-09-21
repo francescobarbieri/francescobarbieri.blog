@@ -9,19 +9,9 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className='container'>
-      <header>
-        <div className="headerWrapper" id="header">
-          <Sidebar />
-        </div>
-      </header>
-      <main>
-        <div className="mainWrapper" id="mainWrapper">
-          <SidebarButton />
-          <About />
-          {/* <Collections /> */}
-        </div>
-      </main>
-    </div>
+    <>
+      <SidebarButton />
+      <About />
+    </>
   )
 }

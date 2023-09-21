@@ -1,6 +1,6 @@
 'use client'
 
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import styles from "@/styles/sidebar.module.css"
 import Button from "./Button"
 import NewsletterButton from "./NewsletterButton"
@@ -9,7 +9,7 @@ import clsx from "clsx";
 
 export default function Sidebar() {
 
-    const pathName = usePathname();
+    const pathName = usePathname(); 
 
     return (
         <div className={clsx(styles.container)} >
@@ -19,14 +19,20 @@ export default function Sidebar() {
                 <Button
                     text="everything"
                     iconType="circle"
+                    href="/"
+                    active={pathName === "/"}
                 />
                 <Button
                     text="finance"
                     iconType="finance"
+                    href="finance"
+                    active={pathName === "/finance"}
                 />
                 <Button
-                    text="AI / ML"
-                    iconType="circle"
+                    text="thoughts"
+                    iconType="thoughts"
+                    href="thoughts"
+                    active={pathName === "/thoughts"}
                 />
                 <hr className={styles.hline} />
                 <Button

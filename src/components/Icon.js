@@ -1,11 +1,12 @@
-import Circle from "@/components/icons/circle.svg";
-import Archive from "@/components/icons/archive.svg"; 
-import At from "@/components/icons/at.svg"; 
-import Book from "@/components/icons/book.svg"; 
-import Person from "@/components/icons/person.svg";
-import ArrowBarRight from "@/components/icons/arrow-bar-right.svg";
-import Finance from '@/components/icons/coin.svg';
-import Trophy from '@/components/icons/trophy.svg';
+import Circle from "@/assets/circle.svg";
+import Archive from "@/assets/archive.svg"; 
+import At from "@/assets/at.svg"; 
+import Book from "@/assets/book.svg"; 
+import Person from "@/assets/person.svg";
+import ArrowBarRight from "@/assets/arrow-bar-right.svg";
+import Finance from '@/assets/coin.svg';
+import Trophy from '@/assets/trophy.svg';
+import Feather from '@/assets/feather.svg';
 
 const iconTypes = {
     circle: Circle,
@@ -15,12 +16,14 @@ const iconTypes = {
     person: Person,
     arrowBarRight: ArrowBarRight,
     finance: Finance,
-    trophy: Trophy
+    trophy: Trophy,
+    thoughts: Feather
 };
 
-const IconComponent = ({ name, ...props }) => {
+const Icon = ({ name, ...props }) => {
+    
     let Icon = iconTypes[name];
     return <Icon {...props} />
 };
 
-export default IconComponent;
+export default Icon;

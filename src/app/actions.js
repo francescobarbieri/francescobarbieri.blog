@@ -22,13 +22,14 @@ export async function fetchPosts() {
         };
     });
 
-    // posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-    // console.log(posts.reverse())
-    return posts.reverse();
+    return posts;
 }
 
-export async function fetchInitialPosts() {
+export async function fetchInitialPosts(filter) {
+
+    if(filter == undefined) {
+        filter = true;
+    }
 
     const fileNames = fs.readdirSync(postDirectory);
 
@@ -44,26 +45,37 @@ export async function fetchInitialPosts() {
         };
     });
 
-    // posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-    // console.log(posts.reverse().slice(0, 3))
-
-    return posts.reverse().slice(0, 3);
+    return posts.reverse().filter(
+        (item) => {
+            if(filter == true) {
+                return true;
+            } else if (item.tag === filter) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    ).slice(0, 3);
 }
 
-export async function getNextPost(currentPostNumber) {
-    const allPosts = [];
-    await fetchPosts().then(res => {
-        res.map((i, index) =>
-            allPosts.push(i)
-        )
-    });
+export async function getNextPost(currentPostID, filter) {
 
-    // console.log(allPosts[currentPostNumber+1]);
+    // Fetch all posts
+    const allPosts = await fetchPosts();
 
-    if(allPosts[currentPostNumber+1] === undefined) {
-        return;
+    // If there are no more post remaining return
+    if(allPosts[currentPostID-1] === undefined) return;
+
+    if (filter === undefined) {
+        return allPosts[currentPostID-1]
+    } else {
+
+        let temp = 1;
+        
+        while(allPosts[currentPostID-temp].tag !== filter) {
+            temp++;
+        }
+
+        return allPosts[currentPostID - temp]
     }
-
-    return allPosts[currentPostNumber+1]
 }
