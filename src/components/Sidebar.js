@@ -45,7 +45,7 @@ export default function Sidebar() {
                     text="archive"
                     iconType="archive"
                     href="archive"
-                    active={pathName === "/archive"}
+                    active={pathName === "/archive" || pathName.includes("/archive")}
                 />
                 <Button
                     text="reading list"
@@ -66,7 +66,7 @@ export default function Sidebar() {
                     Thank you for visiting my blog!
                     <br/><br/>
                     © 2023 Francesco Barbieri<br/>
-                    Proudly published with Next.js
+                    Proudly published with <a href="https://nextjs.org" target="_blank">Next.js</a>
             </div>
         </div>
     )

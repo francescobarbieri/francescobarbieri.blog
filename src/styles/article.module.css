@@ -54,8 +54,15 @@
 .body {
     grid-area: 3 / 2 / 4 / 3;
     width: 100%;
+    max-width: calc(614px - 3.375rem);
     font-size: 1.125rem;
     color: var(--text-color);
+}
+
+.body img {
+    max-width: calc(614px - 3.375rem - 24px);
+    border-radius: 15px;
+    box-sizing: border-box;
 }
 
 @media screen and (min-width: 700px) {

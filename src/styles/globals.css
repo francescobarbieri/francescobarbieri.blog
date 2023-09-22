@@ -2,6 +2,7 @@
     --text-color: rgba(0, 0, 0, 0.66);
     --light-text-color: rgba(0, 0, 0, 0.33);
     --main-blue: #0071E3;
+    --button-hover-blue: #1469be;
 }
 
 html, body {
@@ -77,6 +78,10 @@ main {
     box-sizing: border-box;
     position: relative;
     gap: 6.5em;
+}
+
+h2 {
+    font-size: 1.5rem;
 }
 
 @media screen and (min-width: 700px) and (max-width: 1499px)  {

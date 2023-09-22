@@ -1,16 +1,15 @@
 import SidebarButton from '@/components/SidebarButton'
 import { fetchInitialPosts } from '@/app/actions.js'
-import Article from '@/components/Article'
 import Feed from '@/components/Feed';
 
 export const metadata = {
-  title: 'Finance - Francesco Barbieri',
+  title: 'Thoughts - Francesco Barbieri',
   description: 'Blogging about tech, finance and coding.',
 }
 
 export default async function Finance() {
 
-    const res = await fetchInitialPosts("finance");
+    const res = await fetchInitialPosts("thoughts");
 
     const initialPosts = res.map((i, index) => (
         {

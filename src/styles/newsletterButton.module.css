@@ -8,12 +8,13 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    background-color: var(--main-blue);
+    border: 3px solid var(--main-blue);
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .text {
-    color: #fff;
+    color: #000;
     font-size: 1.25rem;
     font-weight: normal;
     text-transform: capitalize;

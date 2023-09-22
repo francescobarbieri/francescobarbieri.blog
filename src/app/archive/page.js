@@ -1,26 +1,20 @@
-import Feed from '@/components/Feed'
-import Sidebar from '@/components/Sidebar'
 import SidebarButton from '@/components/SidebarButton'
+import Archive from '@/pages/Archive'
+import { fetchPosts } from '../actions'
 
 export const metadata = {
-  title: 'Francesco Barbieri',
+  title: 'Archive - Francesco Barbieri',
   description: 'Blogging about tech, finance and coding.',
 }
 
-export default function Home() {
+export default async function Home() {
+
+  const allPosts = await fetchPosts();
+
   return (
-    <div className='container'>
-      <header>
-        <div className="headerWrapper" id="header">
-          <Sidebar />
-        </div>
-      </header>
-      <main>
-        <div className="mainWrapper" id="mainWrapper">
-          <SidebarButton />
-          {/* <Collections /> */}
-        </div>
-      </main>
-    </div>
+    <>
+      <SidebarButton />
+      <Archive allPosts={allPosts} />
+    </>
   )
 }

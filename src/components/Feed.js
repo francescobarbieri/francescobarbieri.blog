@@ -4,7 +4,7 @@ import styles from "@/styles/feed.module.css";
 import Article from "./Article";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import { fetchInitialPosts, fetchPosts, getNextPost, getPaginatedPosts, initCache } from "@/app/actions";
+import { getNextPost} from "@/app/actions";
 import Congratulations from "./Contratulations";
 import { usePathname } from "next/navigation";
 
@@ -29,8 +29,6 @@ export default function Feed({ initialPosts }) {
             break;
     }
 
-    console.log(currentPostNumber)
-
     function fetchMoreData() {
         getNextPost(currentPostNumber, filter).then(res => {
             if(res === undefined) {
@@ -42,7 +40,7 @@ export default function Feed({ initialPosts }) {
                         title: res.title,
                         tag: res.tag,
                         date: res.date,
-                        content: res.fileContents
+                        content: res.content
                     } 
                 ])
                 setCurrentPostNumber(res.id);

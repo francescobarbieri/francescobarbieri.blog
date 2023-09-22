@@ -13,16 +13,35 @@ export async function fetchPosts() {
     const posts = fileNames.map((fileName) => {
         const filePath = path.join(postDirectory, fileName);
         const fileContents = fs.readFileSync(filePath, 'utf8');
-        const { data } = matter(fileContents);
+        const { data, content } = matter(fileContents);
 
         return {
             fileName,
-            fileContents,
+            content,
             ...data,
         };
     });
 
     return posts;
+}
+
+export async function getSinglePost(fileLink) {
+
+    const fileNames = fs.readdirSync(postDirectory);
+
+    const posts = fileNames.map((fileName) => {
+        const filePath = path.join(postDirectory, fileName);
+        const fileContents = fs.readFileSync(filePath, 'utf8');
+        const { data, content } = matter(fileContents);
+
+        if(data.link === fileLink) {
+            return {
+                fileName,
+                content,
+                ...data,
+            };
+        }
+    });
 }
 
 export async function fetchInitialPosts(filter) {
@@ -36,11 +55,11 @@ export async function fetchInitialPosts(filter) {
     const posts = fileNames.map((fileName) => {
         const filePath = path.join(postDirectory, fileName);
         const fileContents = fs.readFileSync(filePath, 'utf8');
-        const { data } = matter(fileContents);
+        const { data, content } = matter(fileContents);
 
         return {
             fileName,
-            fileContents,
+            content,
             ...data,
         };
     });
@@ -74,6 +93,7 @@ export async function getNextPost(currentPostID, filter) {
         
         while(allPosts[currentPostID-temp].tag !== filter) {
             temp++;
+            if(currentPostID-temp < 0) return;
         }
 
         return allPosts[currentPostID - temp]

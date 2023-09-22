@@ -1,8 +1,9 @@
+'use client'
+
 import styles from "@/styles/button.module.css"
 import Icon from "./Icon"
 import Link from "next/link"
 import clsx from "clsx";
-import { useState } from "react";
 
 export default function Button({ text, iconType, href, active }) {
 

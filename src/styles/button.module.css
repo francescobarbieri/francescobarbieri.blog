@@ -28,8 +28,16 @@
     color: #fff;
 }
 
+.selected .text {
+    color: #fff;
+}
+
 .selected .icon {
     fill: #fff;
+}
+
+.selected:hover {
+    background-color: var(--button-hover-blue);
 }
 
 @media screen and (min-width: 700px) and (max-width: 1499px)  {

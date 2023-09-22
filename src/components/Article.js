@@ -2,8 +2,11 @@ import styles from "@/styles/article.module.css";
 import Icon from "./Icon";
 import clsx from "clsx";
 import { robotoSlab } from "@/app/layout";
+import { marked } from "marked";
 
 export default function Article ({title, tag, date, content}) {
+
+    const main = marked(content)
 
     return (
         <article className={styles.article}>
@@ -28,9 +31,7 @@ export default function Article ({title, tag, date, content}) {
             </div>
 
 
-            <div className={styles.body}>
-                { content }
-            </div>
+            <div className={styles.body} dangerouslySetInnerHTML={{ __html: main }}></div>
 
         </article>
     )

@@ -1,8 +1,6 @@
 import Feed from '@/components/Feed'
-import Sidebar from '@/components/Sidebar'
 import SidebarButton from '@/components/SidebarButton'
 import { fetchInitialPosts } from './actions'
-import Article from '@/components/Article'
 
 export const metadata = {
   title: 'Francesco Barbieri',
@@ -19,18 +17,10 @@ export default async function Home() {
           title: i.title,
           tag: i.tag,
           date: i.date,
-          content: i.fileContents
+          content: i.content
       }
-
-      /*
-      <Article 
-          title={i.title}
-          tag={i.tag}
-          date={i.date}
-          content={i.fileContents}
-      />
-      */
   ))
+
   return (
     <>
       <SidebarButton />
