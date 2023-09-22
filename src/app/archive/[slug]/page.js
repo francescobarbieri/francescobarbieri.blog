@@ -1,15 +1,12 @@
 import { fetchPosts, getSinglePost } from "@/app/actions"
 import Article from "@/components/Article";
 
-export default async function ReadPost({ params }) {
+export default async function ReadPost() {
 
-    const res = await getSinglePost(params.slug);
-
-    console.log(res)
 
     return(
         <div>
-            { res ?
+            {/* res ?
                 (
                     <Article 
                         title={res.title}
@@ -18,11 +15,12 @@ export default async function ReadPost({ params }) {
                         content={res.content}
                     />
                 ) : 'Error'
-            }
+                */}
         </div>
     )
 }
 
+/*
 export async function generateStaticParams() {
     const res = await fetchPosts();
 
@@ -34,3 +32,4 @@ export async function generateStaticParams() {
         slug: post,
     }))
 }
+*/
