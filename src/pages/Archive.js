@@ -18,10 +18,10 @@ export default function Archive({ allPosts }) {
                 <div className={ clsx(styles.collectiontitleText, robotoSlab.className)}>Finance</div>
             </div>
             {
-                allPosts.map((i) => {
+                allPosts ? allPosts.map((i) => {
                     if(i.tag === "finance")
                         return <p className={styles.linkItem}><Link href={"/archive/" + i.link}> • {i.title} ( {i.date} ) </Link> <br /></p>
-                })
+                }) : ''
             }
             <div className={styles.collectiontitle}>
                 <Icon
@@ -33,10 +33,10 @@ export default function Archive({ allPosts }) {
                 <div className={ clsx(styles.collectiontitleText, robotoSlab.className)}>Thoughts</div>
             </div>
             {
-                allPosts.map((i) => {
+                allPosts ? allPosts.map((i) => {
                     if(i.tag === "thoughts")
                         return <p className={styles.linkItem}><Link href={"/archive/" + i.link} > • {i.title} </Link> <br /></p>
-                })
+                }) : ''
             }
         </div>
     )
