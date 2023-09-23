@@ -1,26 +1,28 @@
 import { fetchPosts, getSinglePost } from "@/app/actions"
 import Article from "@/components/Article";
+import styles from '@/styles/feed.module.css'
 
-export default async function ReadPost() {
+export default async function ArchiveSlug({ params }) {
 
+    const post = await getSinglePost(params.slug);
 
     return(
-        <div>
-            {/* res ?
-                (
-                    <Article 
-                        title={res.title}
-                        tag={res.tag}
-                        date={res.date}
-                        content={res.content}
+        <div className={styles.feed}>
+            {
+                post ? (
+                    <Article
+                        title={post.title}
+                        tag={post.tag}
+                        date={post.date}
+                        content={post.content}
                     />
-                ) : 'Error'
-                */}
+                ) : 'Error, post not found.'
+            }
         </div>
     )
 }
 
-/*
+
 export async function generateStaticParams() {
     const res = await fetchPosts();
 
@@ -32,4 +34,3 @@ export async function generateStaticParams() {
         slug: post,
     }))
 }
-*/

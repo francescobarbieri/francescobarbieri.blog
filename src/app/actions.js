@@ -29,19 +29,23 @@ export async function getSinglePost(fileLink) {
 
     const fileNames = fs.readdirSync(postDirectory);
 
+    let singlePost;
+
     const posts = fileNames.map((fileName) => {
         const filePath = path.join(postDirectory, fileName);
         const fileContents = fs.readFileSync(filePath, 'utf8');
         const { data, content } = matter(fileContents);
 
-        if(data.link === fileLink) {
-            return {
+        if(data.link == fileLink) {
+            singlePost =  {
                 fileName,
                 content,
                 ...data,
             };
         }
     });
+
+    return singlePost;
 }
 
 export async function fetchInitialPosts(filter) {

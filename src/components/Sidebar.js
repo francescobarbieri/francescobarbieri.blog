@@ -25,32 +25,32 @@ export default function Sidebar() {
                 <Button
                     text="finance"
                     iconType="finance"
-                    href="finance"
+                    href="/finance"
                     active={pathName === "/finance"}
                 />
                 <Button
                     text="thoughts"
                     iconType="thoughts"
-                    href="thoughts"
+                    href="/thoughts"
                     active={pathName === "/thoughts"}
                 />
                 <hr className={styles.hline} />
                 <Button
                     text="about me"
                     iconType="person"
-                    href="about"
+                    href="/about"
                     active={pathName === "/about"}
                 />
                 <Button
                     text="archive"
                     iconType="archive"
-                    href="archive"
+                    href="/archive"
                     active={pathName === "/archive" || pathName.includes("/archive")}
                 />
                 <Button
                     text="reading list"
                     iconType="book"
-                    href="readings"
+                    href="/readings"
                     active={pathName === "/readings"}
                 />
                 <Button 
