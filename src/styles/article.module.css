@@ -63,6 +63,7 @@
     max-width: calc(614px - 3.375rem - 24px);
     border-radius: 15px;
     box-sizing: border-box;
+    width: 100%;
 }
 
 @media screen and (min-width: 700px) {

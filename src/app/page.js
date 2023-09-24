@@ -3,8 +3,8 @@ import SidebarButton from '@/components/SidebarButton'
 import { fetchInitialPosts } from './actions'
 
 export const metadata = {
-  title: 'Francesco Barbieri',
-  description: 'Blogging about tech, finance and coding.',
+  title: "Francesco Barbieri's Blog",
+  description: 'Blogging about finance and current events',
 }
 
 export default async function Home() {
