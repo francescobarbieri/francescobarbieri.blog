@@ -1,6 +1,6 @@
 'use client'
 
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import styles from "@/styles/sidebar.module.css"
 import Button from "./Button"
 import NewsletterButton from "./NewsletterButton"
@@ -10,6 +10,8 @@ import clsx from "clsx";
 export default function Sidebar() {
 
     const pathName = usePathname(); 
+
+    const year = new Date().getFullYear();
 
     return (
         <div className={clsx(styles.container)} >
@@ -23,10 +25,10 @@ export default function Sidebar() {
                     active={pathName === "/"}
                 />
                 <Button
-                    text="finance"
-                    iconType="finance"
-                    href="/finance"
-                    active={pathName === "/finance"}
+                    text="tech insights"
+                    iconType="tech"
+                    href="/tech"
+                    active={pathName === "/tech"}
                 />
                 <Button
                     text="thoughts"
@@ -65,7 +67,7 @@ export default function Sidebar() {
             <div className={styles.info}>
                     Thank you for visiting my blog!
                     <br/><br/>
-                    © 2023 Francesco Barbieri<br/>
+                    © { year } Francesco Barbieri<br/>
                     Proudly published with <a href="https://nextjs.org" target="_blank">Next.js</a>
             </div>
         </div>

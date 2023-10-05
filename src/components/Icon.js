@@ -7,6 +7,7 @@ import ArrowBarRight from "@/assets/arrow-bar-right.svg";
 import Finance from '@/assets/coin.svg';
 import Trophy from '@/assets/trophy.svg';
 import Feather from '@/assets/feather.svg';
+import Tech from '@/assets/cpu.svg';
 
 const iconTypes = {
     circle: Circle,
@@ -17,7 +18,8 @@ const iconTypes = {
     arrowBarRight: ArrowBarRight,
     finance: Finance,
     trophy: Trophy,
-    thoughts: Feather
+    thoughts: Feather,
+    tech: Tech
 };
 
 const Icon = ({ name, ...props }) => {

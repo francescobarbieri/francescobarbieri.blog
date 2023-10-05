@@ -1,4 +1,3 @@
-import { robotoSlab } from "@/app/layout";
 import Icon from "@/components/Icon";
 import styles from "@/styles/archive.module.css"
 import clsx from "clsx";
@@ -10,16 +9,16 @@ export default function Archive({ allPosts }) {
         <div className={styles.container}>
             <div className={styles.collectiontitle}>
                 <Icon
-                    name="finance"
+                    name="tech"
                     heigth="54"
                     width="54"
                     fill="#000"
                 />
-                <div className={ clsx(styles.collectiontitleText, robotoSlab.className)}>Finance</div>
+                <div className={ clsx(styles.collectiontitleText, robotoSlab.className)}>Tech Insights</div>
             </div>
             {
                 allPosts ? allPosts.map((i) => {
-                    if(i.tag === "finance")
+                    if(i.tag === "tech")
                         return <p className={styles.linkItem}><Link href={"/archive/" + i.link}> • {i.title} ( {i.date} ) </Link> <br /></p>
                 }) : ''
             }

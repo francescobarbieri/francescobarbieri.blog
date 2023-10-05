@@ -1,7 +1,8 @@
+"use client"
+
 import styles from "@/styles/article.module.css";
 import Icon from "./Icon";
 import clsx from "clsx";
-import { robotoSlab } from "@/app/layout";
 import { marked } from "marked";
 
 export default function Article ({title, tag, date, content}) {

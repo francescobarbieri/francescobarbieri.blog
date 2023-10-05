@@ -10,7 +10,7 @@ export const metadata = {
 
 export default async function Finance() {
 
-    const res = await fetchInitialPosts("finance");
+    const res = await fetchInitialPosts("tech");
 
     const initialPosts = res.map((i, index) => (
         {
