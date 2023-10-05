@@ -1,14 +1,12 @@
-'use server'
-
 import '@/styles/globals.css'
-import { Roboto_Slab, Source_Sans_3 } from 'next/font/google'
 import Sidebar from '@/components/Sidebar'
-
-const sourceSans3 = Source_Sans_3({ subsets: ['latin'] })
-const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
+import { sourceSans3 } from '@/lib/fonts'
 
 export const metadata = {
-  title: "Francesco Barbieri's Blog",
+  title: {
+    template: "%s - Francesco Barbieri's Blog",
+    default: "Francesco Barbieri's Blog",
+  },
   description: 'Blogging about tech, thoughts and current events',
   applicationName: "Francesco Barbieri's Blog",
   keywords: ['Francesco', 'Barbieri', 'Blog', 'Developer', 'Freelance', 'Coding', 'Tech'],
@@ -16,21 +14,51 @@ export const metadata = {
   colorScheme: "light",
   creator: 'Francesco Barbieri',
   publisher: 'Francesco Barbieri',
+  // manifest: 'https://nextjs.org/manifest.json',
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en-US',
+    },
+  },
   openGraph: {
     title: "Francesco Barbieri's Blog",
     description: 'Blogging about tech, thoughts and current events',
     url: 'https://francescobarbieri.blog',
     siteName: "Francesco Barbieri's Blog",
     locale: 'en_US',
+    /*
+    images: [
+      {
+        url: 'https://nextjs.org/og.png',
+        width: 800,
+        height: 600,
+      },
+    ],
+    */
     type: 'website'
   },
+  /*
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Next.js',
+    description: 'The React Framework for the Web',
+    siteId: '1467726470533754880',
+    creator: '@nextjs',
+    creatorId: '1467726470533754880',
+    images: ['https://nextjs.org/og.png'],
+  },
+  */
+  themeColor: 'light',
+  archives: ['https://francescobarbieri.blog/archive'],
+  category: 'technology',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
         <body
-          
+          className={sourceSans3.className}
           id="body"
         >
           <div className='container'>

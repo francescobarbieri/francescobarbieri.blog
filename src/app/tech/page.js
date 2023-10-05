@@ -1,11 +1,47 @@
 import SidebarButton from '@/components/SidebarButton'
 import { fetchInitialPosts } from '@/app/actions.js'
-import Article from '@/components/Article'
 import Feed from '@/components/Feed';
 
 export const metadata = {
-  title: 'Finance - Francesco Barbieri',
-  description: 'Blogging about tech, finance and coding.',
+  title: 'Tech Insights',
+  description: 'Feed about tech insight.',
+  alternates: {
+    canonical: '/tech',
+    languages: {
+      'en-US': '/en-US',
+    },
+  },
+  openGraph: {
+    title: "Tech Inshights - Francesco Barbieri's Blog.",
+    description: 'Feed about tech insight',
+    url: 'https://francescobarbieri.blog/tech',
+    siteName: "Francesco Barbieri's Blog",
+    locale: 'en_US',
+    /*
+    images: [
+      {
+        url: 'https://nextjs.org/og.png',
+        width: 800,
+        height: 600,
+      },
+    ],
+    */
+    type: 'website'
+  },
+  /*
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Next.js',
+    description: 'The React Framework for the Web',
+    siteId: '1467726470533754880',
+    creator: '@nextjs',
+    creatorId: '1467726470533754880',
+    images: ['https://nextjs.org/og.png'],
+  },
+  */
+  themeColor: 'light',
+  archives: ['https://francescobarbieri.blog/archive'],
+  category: 'technology',
 }
 
 export default async function Finance() {

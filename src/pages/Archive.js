@@ -2,6 +2,7 @@ import Icon from "@/components/Icon";
 import styles from "@/styles/archive.module.css"
 import clsx from "clsx";
 import Link from "next/link";
+import { robotoSlab } from "@/lib/fonts";
 
 export default function Archive({ allPosts }) {
 
