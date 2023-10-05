@@ -1,5 +1,6 @@
 import styles from "@/styles/heading.module.css";
 import clsx from "clsx";
+import { robotoSlab } from '@/styles/fonts';
 
 export default function Heading () {
     return(
