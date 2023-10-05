@@ -4,6 +4,7 @@ import styles from "@/styles/article.module.css";
 import Icon from "./Icon";
 import clsx from "clsx";
 import { marked } from "marked";
+import { robotoSlab } from '@/styles/fonts';
 
 export default function Article ({title, tag, date, content}) {
 
