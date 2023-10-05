@@ -1,5 +1,3 @@
-'use server'
-
 import '@/styles/globals.css'
 import { Roboto_Slab, Source_Sans_3 } from 'next/font/google'
 import Sidebar from '@/components/Sidebar'
