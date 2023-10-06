@@ -17,15 +17,13 @@ export const metadata = {
     url: 'https://francescobarbieri.blog/archive',
     siteName: "Francesco Barbieri's Blog",
     locale: 'en_US',
-    /*
     images: [
       {
-        url: 'https://nextjs.org/og.png',
+        url: 'https://francescobarbieri.blog/og/og.png',
         width: 800,
-        height: 600,
+        height: 400,
       },
     ],
-    */
     type: 'website'
   },
   /*

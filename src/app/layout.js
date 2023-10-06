@@ -14,7 +14,7 @@ export const metadata = {
   colorScheme: "light",
   creator: 'Francesco Barbieri',
   publisher: 'Francesco Barbieri',
-  // manifest: 'https://nextjs.org/manifest.json',
+  manifest: 'https://francescobarbieri.blog/manifest.webmanifest',
   alternates: {
     canonical: '/',
     languages: {
@@ -27,15 +27,13 @@ export const metadata = {
     url: 'https://francescobarbieri.blog',
     siteName: "Francesco Barbieri's Blog",
     locale: 'en_US',
-    /*
     images: [
       {
-        url: 'https://nextjs.org/og.png',
+        url: 'https://francescobarbieri.blog/og/og.png',
         width: 800,
-        height: 600,
+        height: 400,
       },
     ],
-    */
     type: 'website'
   },
   /*
@@ -52,6 +50,20 @@ export const metadata = {
   themeColor: 'light',
   archives: ['https://francescobarbieri.blog/archive'],
   category: 'technology',
+  icons: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      url: '/icons/faviconDark.ico',
+      media: '(prefers-color-scheme: dark)',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      url: '/icons/faviconLight.ico',
+      media: '(prefers-color-scheme: light)',
+    }
+  ]
 }
 
 export default function RootLayout({ children }) {
