@@ -14,6 +14,7 @@ export default async function ArchiveSlug({ params }) {
                         title={post.title}
                         tag={post.tag}
                         date={post.date}
+                        link={post.link}
                         content={post.content}
                     />
                 ) : 'Error, post not found.'

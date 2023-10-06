@@ -40,6 +40,7 @@ export default function Feed({ initialPosts }) {
                         title: res.title,
                         tag: res.tag,
                         date: res.date,
+                        link: res.link,
                         content: res.content
                     } 
                 ])
@@ -63,6 +64,7 @@ export default function Feed({ initialPosts }) {
                         title={i.title}
                         tag={i.tag}
                         date={i.date}
+                        link={i.link}
                         content={i.content}
                     />
                 )) : ''

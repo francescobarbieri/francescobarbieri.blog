@@ -66,6 +66,15 @@
     width: 100%;
 }
 
+.linkToArchive {
+    text-decoration: none;
+    color: #000;
+}
+
+.linkToArchive:hover {
+    color: var(--main-blue);
+}
+
 @media screen and (min-width: 700px) {
     .article {
         grid-template-columns: 3.375rem auto;

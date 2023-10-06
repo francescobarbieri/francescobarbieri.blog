@@ -5,8 +5,9 @@ import Icon from "./Icon";
 import clsx from "clsx";
 import { marked } from "marked";
 import { robotoSlab } from "@/lib/fonts";
+import Link from "next/link";
 
-export default function Article ({title, tag, date, content}) {
+export default function Article ({title, tag, date, content, link}) {
 
     const main = marked(content)
 
@@ -29,7 +30,12 @@ export default function Article ({title, tag, date, content}) {
                 />
             </div>
             <div className={clsx(styles.title, robotoSlab.className)}>
-                { title }
+                <Link
+                    className={styles.linkToArchive}
+                    href={"/archive/" + link}
+                >
+                    { title }
+                </Link>
             </div>
 
 

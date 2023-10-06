@@ -12,6 +12,7 @@ export default async function Home() {
           title: i.title,
           tag: i.tag,
           date: i.date,
+          link: i.link,
           content: i.content
       }
   ))
