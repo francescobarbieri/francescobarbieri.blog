@@ -1,5 +1,5 @@
 import SidebarButton from '@/components/SidebarButton'
-import About from '@/components/About';
+import Readings from '@/pages/Readings';
 
 export const metadata = {
   title: 'Readings - Francesco Barbieri',
@@ -11,7 +11,7 @@ export default async function Finance() {
     return (
         <>
             <SidebarButton />
-            <About />
+            <Readings />
         </>
     )
 }

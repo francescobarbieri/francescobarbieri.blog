@@ -1,5 +1,5 @@
 import SidebarButton from '@/components/SidebarButton'
-import About from "@/components/About"
+import About from "@/pages/About"
 
 export const metadata = {
   title: 'About',
