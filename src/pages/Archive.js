@@ -19,12 +19,23 @@ export default function Archive({ allPosts }) {
                     Tech Insights
                 </div>
                 <div className={styles.body}>
-                    {
-                        allPosts ? allPosts.map((i) => {
-                            if(i.tag === "tech")
-                                return <p className={styles.linkItem}><Link href={"/archive/" + i.link}> • {i.title} ( {i.date} ) </Link> <br /></p>
-                        }) : ''
-                    }
+                    <ul className={styles.archiveList}>
+                        {
+                            allPosts ? allPosts.map((i) => {
+                                if(i.tag === "tech")
+                                    return (
+                                        <li>
+                                            <Link
+                                                href={"/archive/" + i.link}
+                                                className={styles.articleItem}
+                                            >
+                                                {i.title} ( {i.date} ) 
+                                            </Link>
+                                        </li>
+                                    )
+                            }) : ''
+                        }
+                    </ul>
                 </div>
             </div>
             <div className={styles.container}>
@@ -38,12 +49,23 @@ export default function Archive({ allPosts }) {
                     Thoughts
                 </div>
                 <div className={styles.body}>
-                    {
-                        allPosts ? allPosts.map((i) => {
-                            if(i.tag === "thoughts")
-                                return <p className={styles.linkItem}><Link href={"/archive/" + i.link} > • {i.title} </Link> <br /></p>
-                        }) : ''
-                    }
+                    <ul className={styles.archiveList}>
+                        {
+                            allPosts ? allPosts.map((i) => {
+                                if(i.tag === "thoughts")
+                                    return (
+                                        <li>
+                                            <Link
+                                                href={"/archive/" + i.link}
+                                                className={styles.articleItem}
+                                            >
+                                                {i.title} ( {i.date} ) 
+                                            </Link>
+                                        </li>
+                                    )
+                            }) : ''
+                        }
+                    </ul>
                 </div>
             </div>
         </div>
