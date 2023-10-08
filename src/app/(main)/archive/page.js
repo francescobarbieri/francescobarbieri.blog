@@ -1,6 +1,6 @@
 import SidebarButton from '@/components/SidebarButton'
 import Archive from '@/pages/Archive'
-import { fetchPosts } from '../actions'
+import { fetchPosts } from '../../actions'
 
 export const metadata = {
   title: 'Archive',

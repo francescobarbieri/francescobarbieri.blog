@@ -1,6 +1,6 @@
 import Feed from '@/components/Feed'
 import SidebarButton from '@/components/SidebarButton'
-import { fetchInitialPosts } from './actions'
+import { fetchInitialPosts } from '@/app/actions'
 
 export default async function Home() {
 

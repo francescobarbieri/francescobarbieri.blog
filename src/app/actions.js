@@ -103,3 +103,27 @@ export async function getNextPost(currentPostID, filter) {
         return allPosts[currentPostID - temp]
     }
 }
+
+
+export async function addSubscriber(formData) {
+
+    const mailchimp = require('@mailchimp/mailchimp_marketing');
+    const crypto = require('crypto');
+    
+    const email = await formData.get("email");
+
+    mailchimp.setConfig({
+        apiKey: "7376fa7725107a6ec3f42b1048a8028f-us21",
+        server: "us21",
+    });
+
+    const addUserResponse = async() => {
+        const response = await mailchimp.lists.setListMember(
+            "f2a56fb6ab",
+            crypto.createHash("md5").update(email).digest("hex"),
+            { email_address: email, status_if_new: "subscribed", status: "subscribed"}
+        );
+    } 
+    
+    addUserResponse();
+}
