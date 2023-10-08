@@ -22,20 +22,18 @@ export default function Readings() {
             <div className={styles.body}>
 
                 <blockquote className={styles.blockquote}>
-                    Ciao!
+                    This list was last updated in October 2023.
                 </blockquote>
 
                 <div className={styles.book}>
                     <div className={clsx(styles.bookTitle, robotoSlab.className)}>
-                        The Filter Bubble
+                        So Good They Can't Ignore You
                     </div>
-                    <a href="#" target="_blank">
+                    <a href="https://books.apple.com/it/book/so-good-they-cant-ignore-you/id721497019" target="_blank">
                         <img src="/bookCovers/so-good-they-cant-ignore-you.png" className={styles.bookImage}/>
                     </a>
                     <div className={styles.text}>
-                        Steve McConnell's Code Complete 2 is the Joy of Cooking for software developers. Reading it means that you enjoy your work, you're serious about what you do, and you want to keep improving. In Code Complete, Steve notes that the average programmer reads less than one technical book per year. The very act of reading this book already sets you apart from probably ninety percent of your fellow developers. In a good way.
-
-                        I like this book so much that the title of this very website is derived from it – the examples of what not to do are tagged with the "Coding Horror" icon. There's nothing funnier than a Coding Horror – until you have to deal with one yourself. Then it's suddenly not so funny any more. Do yourself a favor. Make this the first book you read, and the first book you recommend to your fellow developers.
+                        In this book you are presented with compelling scientific and contemporary case study evidence that the key to one's career success is not to 'follow your passion'. Indeed that's a bad career advice. You should try to find out what you do well, build 'career capital' and focus all your efforts into that direction. It changed how I think about my career, my long term goals, how to achieve them and how to craft a remarkable life.
                     </div>
                 </div>
 
@@ -45,13 +43,11 @@ export default function Readings() {
                     <div className={clsx(styles.bookTitle, robotoSlab.className)}>
                         The Filter Bubble
                     </div>
-                    <a href="https://www.amazon.com/dp/0143121235?ref_=cm_sw_r_cp_ud_dp_VE0XFCFV80RMCVKSXVSQ" target="_blank">
+                    <a href="https://books.apple.com/us/book/the-filter-bubble/id414403876" target="_blank">
                         <img src="/bookCovers/the-filter-bubble.png" className={styles.bookImage}/>
                     </a>
                     <div className={styles.text}>
-                        Steve McConnell's Code Complete 2 is the Joy of Cooking for software developers. Reading it means that you enjoy your work, you're serious about what you do, and you want to keep improving. In Code Complete, Steve notes that the average programmer reads less than one technical book per year. The very act of reading this book already sets you apart from probably ninety percent of your fellow developers. In a good way.
-
-                        I like this book so much that the title of this very website is derived from it – the examples of what not to do are tagged with the "Coding Horror" icon. There's nothing funnier than a Coding Horror – until you have to deal with one yourself. Then it's suddenly not so funny any more. Do yourself a favor. Make this the first book you read, and the first book you recommend to your fellow developers.
+                        An eye-opening book of how the hidden rise of personalization on the Internet is controlling and limiting the information we consume. This trends undermines the Internet's original purpose as an open platform for the spread of ideas and could live us all in an isoleted echoing world. I like this book because it makes us aware how insidious customization of the web is limiting our access to information, and narrowing rather than expanding our horizons.
                     </div>
                 </div>
 
