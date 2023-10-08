@@ -26,10 +26,10 @@ export default function Readings() {
                 </blockquote>
 
                 <div className={styles.book}>
-                    <div className={styles.bookTitle}>
+                    <div className={clsx(styles.bookTitle, robotoSlab.className)}>
                         The Filter Bubble
                     </div>
-                    <a href="#">
+                    <a href="#" target="_blank">
                         <img src="/bookCovers/so-good-they-cant-ignore-you.png" className={styles.bookImage}/>
                     </a>
                     <div className={styles.text}>
@@ -42,7 +42,7 @@ export default function Readings() {
                 <hr className={styles.bookDivider}></hr>
 
                 <div className={styles.book}>
-                    <div className={styles.bookTitle}>
+                    <div className={clsx(styles.bookTitle, robotoSlab.className)}>
                         The Filter Bubble
                     </div>
                     <a href="https://www.amazon.com/dp/0143121235?ref_=cm_sw_r_cp_ud_dp_VE0XFCFV80RMCVKSXVSQ" target="_blank">

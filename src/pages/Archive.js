@@ -1,5 +1,5 @@
 import Icon from "@/components/Icon";
-import styles from "@/styles/archive.module.css"
+import styles from "@/styles/pages.module.css"
 import clsx from "clsx";
 import Link from "next/link";
 import { robotoSlab } from "@/lib/fonts";
@@ -7,37 +7,45 @@ import { robotoSlab } from "@/lib/fonts";
 export default function Archive({ allPosts }) {
 
     return(
-        <div className={styles.container}>
-            <div className={styles.collectiontitle}>
-                <Icon
-                    name="tech"
-                    heigth="54"
-                    width="54"
-                    fill="#000"
-                />
-                <div className={ clsx(styles.collectiontitleText, robotoSlab.className)}>Tech Insights</div>
+        <div>
+            <div className={styles.container}>
+                <div className={styles.icon}>
+                    <Icon 
+                        name="tech"
+                        fill="#000"
+                    />
+                </div>
+                <div className={clsx(styles.title, robotoSlab.className)}>
+                    Tech Insights
+                </div>
+                <div className={styles.body}>
+                    {
+                        allPosts ? allPosts.map((i) => {
+                            if(i.tag === "tech")
+                                return <p className={styles.linkItem}><Link href={"/archive/" + i.link}> • {i.title} ( {i.date} ) </Link> <br /></p>
+                        }) : ''
+                    }
+                </div>
             </div>
-            {
-                allPosts ? allPosts.map((i) => {
-                    if(i.tag === "tech")
-                        return <p className={styles.linkItem}><Link href={"/archive/" + i.link}> • {i.title} ( {i.date} ) </Link> <br /></p>
-                }) : ''
-            }
-            <div className={styles.collectiontitle}>
-                <Icon
-                    name="thoughts"
-                    heigth="54"
-                    width="54"
-                    fill="#000"
-                />
-                <div className={ clsx(styles.collectiontitleText, robotoSlab.className)}>Thoughts</div>
+            <div className={styles.container}>
+                <div className={styles.icon}>
+                    <Icon
+                        name="thoughts"
+                        fill="#000"
+                    />
+                </div>
+                <div className={clsx(styles.title, robotoSlab.className)}>
+                    Thoughts
+                </div>
+                <div className={styles.body}>
+                    {
+                        allPosts ? allPosts.map((i) => {
+                            if(i.tag === "thoughts")
+                                return <p className={styles.linkItem}><Link href={"/archive/" + i.link} > • {i.title} </Link> <br /></p>
+                        }) : ''
+                    }
+                </div>
             </div>
-            {
-                allPosts ? allPosts.map((i) => {
-                    if(i.tag === "thoughts")
-                        return <p className={styles.linkItem}><Link href={"/archive/" + i.link} > • {i.title} </Link> <br /></p>
-                }) : ''
-            }
         </div>
     )
 }
