@@ -104,12 +104,10 @@ export async function getNextPost(currentPostID, filter) {
     }
 }
 
-
 export async function addSubscriber(formData) {
 
     const mailchimp = require('@mailchimp/mailchimp_marketing');
     const crypto = require('crypto');
-    
     const email = await formData.get("email");
 
     mailchimp.setConfig({
@@ -123,7 +121,9 @@ export async function addSubscriber(formData) {
             crypto.createHash("md5").update(email).digest("hex"),
             { email_address: email, status_if_new: "subscribed", status: "subscribed"}
         );
-    } 
+
+        console.log(response)
+    }
     
     addUserResponse();
 }

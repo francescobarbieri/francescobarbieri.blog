@@ -1,4 +1,5 @@
-import '@/styles/globals.css'
+import '@/styles/globals.css';
+import { sourceSans3 } from '@/lib/fonts';
 
 export const metadata = {
   title: {
@@ -68,7 +69,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
  return (
     <html lang="en">
-      <body>{children}</body>
+      <body
+        className={sourceSans3.className}
+      >{children}</body>
     </html>
   )
 }
