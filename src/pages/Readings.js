@@ -41,6 +41,20 @@ export default function Readings() {
 
                 <div className={styles.book}>
                     <div className={clsx(styles.bookTitle, robotoSlab.className)}>
+                        Persuasive Technology
+                    </div>
+                    <a href="https://books.apple.com/ie/book/persuasive-technology/id491708975" target="_blank">
+                        <img src="/bookCovers/persuasive-tech.png" className={styles.bookImage}/>
+                    </a>
+                    <div className={styles.text}>
+                        Dr. B.J. Fogg is the director of the Persuasive Technology Lab at Stanford University. In this book, based on 9 years of researches in capotology, he reveals how different interfaces can be used to change people's attitude and behaviour.
+                    </div>
+                </div>
+
+                <hr className={styles.bookDivider}></hr>
+
+                <div className={styles.book}>
+                    <div className={clsx(styles.bookTitle, robotoSlab.className)}>
                         The Filter Bubble
                     </div>
                     <a href="https://books.apple.com/us/book/the-filter-bubble/id414403876" target="_blank">
