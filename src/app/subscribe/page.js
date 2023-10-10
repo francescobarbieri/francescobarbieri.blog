@@ -34,7 +34,9 @@ export default function Subscribe () {
                 (
                     <>
                         <p className={clsx(styles.header, robotoSlab.className)}>Newsletter</p>
-                        <p className={styles.text}>You will receive all messages from this feed and they will be delivered via email.</p>
+                        <p className={styles.text}>
+                            Apart new publications, you will receive a list of stimulating articles from the web based on the topics of my blog
+                        </p>
                         <form
                             action={addSubscriber}
                             onSubmit={(event) => handleSubmit(event)}
