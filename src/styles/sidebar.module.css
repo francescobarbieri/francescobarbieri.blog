@@ -1,11 +1,11 @@
 .container {
-    width: 100%;
-    height: calc(100vh - 2rem);
-    padding-top: 5rem;
+    width: 100vw;
+    height: calc(100vh - 5rem);
+    padding-top: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: fixed;
+    position: absolute;
     z-index: 3;
     overflow-y: scroll;
     background-color: #fff;
@@ -58,6 +58,7 @@
         background-color: transparent;
         width: 5rem;
         padding-top: 2rem;
+        position: fixed;
     }
 
     .info {
@@ -67,7 +68,10 @@
 
 @media screen and (min-width: 1500px) {
     .container {
+        background-color: transparent;
+        padding-top: 2rem;
         width: 17rem;
+        position: fixed;
     }
 
     .buttonContainer {

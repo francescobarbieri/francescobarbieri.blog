@@ -8,7 +8,9 @@ export default function Congratulations() {
                 height="170"
                 width="170"
                 fill="#0071E3"
-                name="trophy" />
+                name="trophy"
+                className={styles.icon}    
+            />
             <div className={styles.textWrapper}>
                 <h1 className={styles.h1}>Congratulations!</h1>
                 <div className={styles.text}>

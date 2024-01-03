@@ -1,5 +1,5 @@
 .container {
-    width: 100%;
+    width: calc(100% - 1rem);
     max-width: 614px;
     display: grid;
     grid-template-columns: 170px auto;
@@ -10,9 +10,14 @@
 
 .h1 {
     margin-block-start: 0;
+    font-size: 1.5rem;
 }
 
 .text {
     font-size: 1.125rem;
     color: var(--text-color);
+}
+
+.icon {
+    align-self: center;
 }

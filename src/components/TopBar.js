@@ -33,7 +33,7 @@ const Topbar = () => {
 
             // Lock scrolling
             document.getElementById('body').style.overflow = "visible"
-        } 
+        }
     }, [status])
 
     return (
@@ -49,9 +49,9 @@ const Topbar = () => {
                     onClick={() => setStatus(!status)}
                 >
                     <Icon
-                        name="menu"
+                        name={status ? "xClose" : "menu"}
                         fill="#000"
-                        height="65%"
+                        height="55%"
                         className={styles.icon}
                     />
                 </div>

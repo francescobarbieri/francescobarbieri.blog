@@ -10,6 +10,7 @@ import Feather from '@/assets/feather.svg';
 import Tech from '@/assets/cpu.svg';
 import SmallArrowRight from '@/assets/small-arrow-right.svg';
 import BurgerMenu from "@/assets/burgerMenu.svg";
+import xClose from "@/assets/xClose.svg";
 
 const iconTypes = {
     circle: Circle,
@@ -24,6 +25,7 @@ const iconTypes = {
     tech: Tech,
     smallArrowRight: SmallArrowRight,
     menu: BurgerMenu,
+    xClose: xClose,
 };
 
 const Icon = ({ name, ...props }) => {

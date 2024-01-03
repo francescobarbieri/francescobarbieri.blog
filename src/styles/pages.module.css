@@ -6,7 +6,7 @@
     grid-template-rows: 1.5625rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
     padding-bottom: 2rem;
 }
 
@@ -95,10 +95,11 @@
     .container {
         grid-template-columns: 3.375rem auto;
         width: 100%;
+        margin-top: 2rem;
         padding-left: 0rem;
         padding-right: 0rem;
         column-gap: 1.5rem;
-        margin-left: 1.5rem;
+        margin-left: 3rem;
     }
 
     .icon {
