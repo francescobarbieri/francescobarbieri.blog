@@ -9,7 +9,7 @@ import Trophy from '@/assets/trophy.svg';
 import Feather from '@/assets/feather.svg';
 import Tech from '@/assets/cpu.svg';
 import SmallArrowRight from '@/assets/small-arrow-right.svg';
-import BurgerMenu from "@/assets/BurgerMenu.svg";
+import BurgerMenu from "@/assets/burgerMenu.svg";
 
 const iconTypes = {
     circle: Circle,
