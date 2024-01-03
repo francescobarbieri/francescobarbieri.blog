@@ -1,12 +1,12 @@
 'use client'
 
 import styles from "@/styles/feed.module.css";
-import Article from "./Article";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { getNextPost} from "@/app/actions";
 import Congratulations from "./Contratulations";
 import { usePathname } from "next/navigation";
+import Article from "./Article";
 
 export default function Feed({ initialPosts }) {
 

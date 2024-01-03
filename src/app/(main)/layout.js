@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import Sidebar from '@/components/Sidebar'
 import { sourceSans3 } from '@/lib/fonts'
+import Topbar from '@/components/TopBar'
 
 export const metadata = {
   title: {
@@ -74,6 +75,7 @@ export default function RootLayout({ children }) {
           id="body"
         >
           <div className='container'>
+            <Topbar />
             <header>
               <div className="headerWrapper" id="header">
                 <Sidebar />

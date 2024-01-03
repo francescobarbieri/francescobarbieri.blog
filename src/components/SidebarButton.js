@@ -45,7 +45,7 @@ export default function SidebarButton () {
         else
         {
             // Background of main section
-            document.getElementById('mainWrapper').style.backgroundColor = "#fff"
+            document.getElementById('mainWrapper').style.backgroundColor = "transparent"
 
             // Show or hide header section
             document.getElementById("header").classList.remove("showHeader")

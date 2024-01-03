@@ -1,14 +1,14 @@
 .container {
-    width: 17rem;
+    width: 100%;
     height: calc(100vh - 2rem);
-    padding-top: 2rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
-    background-color: #fff;
     z-index: 3;
     overflow-y: scroll;
+    background-color: #fff;
 }
 
 .container::-webkit-scrollbar {
@@ -43,7 +43,7 @@
     height: fit-content;
     margin-bottom: 2rem;
     padding-left: 1rem;
-    margin-top: 3rem;
+    margin-top: 0.5rem;
     color: var(--light-text-color);
     font-size: 0.875rem;
 }
@@ -55,7 +55,9 @@
 
 @media screen and (min-width: 700px) and (max-width: 1499px) {
     .container {
+        background-color: transparent;
         width: 5rem;
+        padding-top: 2rem;
     }
 
     .info {
@@ -64,6 +66,10 @@
 }
 
 @media screen and (min-width: 1500px) {
+    .container {
+        width: 17rem;
+    }
+
     .buttonContainer {
         width: 100%;
         padding-left: 0rem;

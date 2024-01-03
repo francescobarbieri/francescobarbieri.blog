@@ -56,20 +56,19 @@ export default function Sidebar() {
                     active={pathName === "/readings"}
                 />
                 <Button 
-                    text="email me"
+                    text="let's connect"
                     iconType="at"
-                    href="mailto:info@francescobarbieri.blog"
+                    href="https://beacons.ai/frabarbieri"
+                    openInNewPage={true}
                 />
                 <hr className={styles.hline} />
-
-                <NewsletterButton />
-            </nav>
-            <div className={styles.info}>
+                <div className={styles.info}>
                     Thank you for visiting my blog!
                     <br/><br/>
                     © { year } Francesco Barbieri<br/>
                     Proudly published with <a href="https://nextjs.org" target="_blank">Next.js</a>
-            </div>
+                </div>
+            </nav>
         </div>
     )
 }

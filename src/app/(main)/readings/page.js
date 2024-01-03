@@ -45,8 +45,7 @@ export default async function Finance() {
 
     return (
         <>
-            <SidebarButton />
-            <Readings />
+          <Readings />
         </>
     )
 }

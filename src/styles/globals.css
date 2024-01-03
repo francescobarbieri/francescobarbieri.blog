@@ -2,6 +2,7 @@
     --text-color: rgba(0, 0, 0, 0.66);
     --light-text-color: rgba(0, 0, 0, 0.33);
     --main-blue: #0071E3;
+    --background-color: rgba(242, 246, 255, 1.0);
     --button-hover-blue: #1469be;
 }
 
@@ -12,6 +13,7 @@ html, body {
     margin: 0;
     font-size: 1em;
     overflow-x: hidden;
+    background-color: var(--background-color);
 }
 
 .container {

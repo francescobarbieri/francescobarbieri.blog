@@ -13,7 +13,10 @@
 }
 
 .container:hover {
-    background-color: rgb(227, 229, 232);
+    background-color: rgb(221, 225, 232);
+    -webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
 }
 
 .text {

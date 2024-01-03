@@ -12,7 +12,7 @@ export default function Congratulations() {
             <div className={styles.textWrapper}>
                 <h1 className={styles.h1}>Congratulations!</h1>
                 <div className={styles.text}>
-                    You've devoured all my current content - bravo! But the adventure doesn't have to end here. Join the newsletter and embark on a journey of continuous discovery. Stay in the loop, stay updated. Join today!
+                    You've reached the end of all my current content - congratulations! But it doesn't have to end here: join the newsletter! Stay in the loop, stay updated. Join today!
                 </div>
             </div>
         </div>

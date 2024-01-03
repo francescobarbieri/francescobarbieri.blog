@@ -49,7 +49,6 @@ export default async function Home() {
 
   return (
     <>
-      <SidebarButton />
       <Archive allPosts={allPosts} />
     </>
   )

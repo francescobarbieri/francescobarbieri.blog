@@ -4,8 +4,14 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1.5625rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    position: relative;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 0 1px #efebeb;
 }
 
 .header {
@@ -42,7 +48,7 @@
 .icon {
     display: none;
     grid-area: 2 / 1 / 2 / 3;
-    align-self: center
+    align-self: start;
 }
 
 .title {
@@ -57,6 +63,25 @@
     max-width: calc(614px - 3.375rem);
     font-size: 1.125rem;
     color: var(--text-color);
+}
+
+.feedBody {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 25; /* number of lines to show */
+            line-clamp: 25;
+    -webkit-box-orient: vertical;
+    z-index: 1;
+}
+
+.feedBodyFade {
+    grid-area: 3 / 2 / 4 / 3;
+    width: 100%;
+    max-width: calc(614px - 3.375rem);
+    background: linear-gradient(0deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4416141456582633) 10%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 100%);
+    z-index: 1000;
+    pointer-events: none;
 }
 
 .body img {
@@ -79,8 +104,8 @@
     .article {
         grid-template-columns: 3.375rem auto;
         width: 100%;
-        padding-left: 0rem;
-        padding-right: 0rem;
+        padding-left: 1.5rem;
+        padding-right: 6.375rem;
         column-gap: 1.5rem;
     }
 

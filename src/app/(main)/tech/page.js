@@ -58,8 +58,7 @@ export default async function Finance() {
 
     return (
         <>
-            <SidebarButton />
-            <Feed initialPosts={initialPosts} />
+          <Feed initialPosts={initialPosts} />
         </>
     )
 }

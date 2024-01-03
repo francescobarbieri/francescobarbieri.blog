@@ -8,6 +8,8 @@ import Finance from '@/assets/coin.svg';
 import Trophy from '@/assets/trophy.svg';
 import Feather from '@/assets/feather.svg';
 import Tech from '@/assets/cpu.svg';
+import SmallArrowRight from '@/assets/small-arrow-right.svg';
+import BurgerMenu from "@/assets/BurgerMenu.svg";
 
 const iconTypes = {
     circle: Circle,
@@ -19,7 +21,9 @@ const iconTypes = {
     finance: Finance,
     trophy: Trophy,
     thoughts: Feather,
-    tech: Tech
+    tech: Tech,
+    smallArrowRight: SmallArrowRight,
+    menu: BurgerMenu,
 };
 
 const Icon = ({ name, ...props }) => {

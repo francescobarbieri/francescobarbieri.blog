@@ -2,15 +2,15 @@
     width: 100%;
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
-    border-radius: 15px;
+    border-radius: 3rem;
     margin-top: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    border: 3px solid var(--main-blue);
     text-decoration: none;
     box-sizing: border-box;
+    border: 3px solid var(--main-blue);
 }
 
 .text {

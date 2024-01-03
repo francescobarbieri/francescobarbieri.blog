@@ -1,9 +1,9 @@
 .feed {
-    margin-top: 2rem;
+    margin-top: 5rem;
     height: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
     position: relative;
 }
 
@@ -17,6 +17,7 @@
 
 @media screen and (min-width: 700px) {
     .feed {
+        margin-top: 2rem;
         margin-left: 1.5rem;
     }
 }
