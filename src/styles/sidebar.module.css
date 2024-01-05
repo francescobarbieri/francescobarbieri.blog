@@ -1,6 +1,6 @@
 .container {
     width: 100vw;
-    height: calc(100vh - 5rem);
+    height: calc(100dvh - 5rem);
     padding-top: 6rem;
     display: flex;
     flex-direction: column;
