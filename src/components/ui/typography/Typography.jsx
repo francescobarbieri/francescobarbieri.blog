@@ -74,6 +74,12 @@ export function TypographySmall({ children }) {
     )
 }
 
+export function TypographyLarge({ children }) {
+    return <div className="text-lg font-semibold">
+        { children }
+    </div>
+}
+
 export function TypographyMuted({ children }) {
     return (
         <p className="text-sm text-muted-foreground">
