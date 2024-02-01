@@ -1,9 +1,10 @@
 import FloatingHeader from "@/components/floating-header";
 import Footer from "@/components/footer";
 import { TypographyH3, TypographyH4, TypographyP } from "@/components/ui/typography/Typography";
-import WritingLink from "@/components/writing-link";
+import WritingLinkList from "@/components/writing-link-list";
 
-const Essays = () => {
+const Essays = async () => {
+
     return (
         <>
             <FloatingHeader scrollTitle={"Essays"}/>
@@ -12,34 +13,10 @@ const Essays = () => {
                     free toughts  
                 </TypographyH3>
                 <TypographyP>
-                    At that time I couldn't know it was the start of a career. Over the course of personal and university projects, as well as through my professional experiences, I have acquired valuable expertise in Java, JavaScript and web technologies. Currently, I am learning Machine Learning in my spare time.
+                    I write about events and topics that strike me. In my essays, you'll find reflections on the subjects that make me reflect the most. These often include technologies I'm currently interested in or insights into how I'm learning and growing in my career.
                 </TypographyP>
-                <br/>
-                <hr/>
-                <br/>
-                <TypographyH4>
-                    2024
-                </TypographyH4>
-                <br />
-                <div className="flex flex-col gap-3">
-                    <WritingLink></WritingLink>
-                    <WritingLink></WritingLink>
-                    <WritingLink></WritingLink>
-                </div>
-                <br/>
-                <hr/>
-                <br/>
-                <TypographyH4>
-                    2023
-                </TypographyH4>
-                <br />
-                <div className="flex flex-col gap-3">
-                    <WritingLink></WritingLink>
-                    <WritingLink></WritingLink>
-                    <WritingLink></WritingLink>
-                    <WritingLink></WritingLink>
-                    <WritingLink></WritingLink>
-                </div>
+                
+                <WritingLinkList />
             </div>
             <Footer />
         </>

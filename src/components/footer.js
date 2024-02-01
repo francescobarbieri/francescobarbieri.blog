@@ -10,17 +10,17 @@ const Footer = () => {
         <footer className="pt-12 pb-12">
             <hr/>
             <div className="flex justify-between align content-center mt-5 text-gray-400">
-                <TypographySmall>
-                    <a 
-                        href="https://twitter.com/intent/user?screen_name=frabarbieri_"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 rounded-lg p-2 hover:bg-gray-100"
-                    >
+                <a 
+                    href="https://twitter.com/intent/user?screen_name=frabarbieri_"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 rounded-lg p-2 hover:bg-gray-100"
+                >
+                    <TypographySmall>
                         <span className="underline">Follow me</span>
-                        <LuExternalLink size={16} />
-                    </a>
-                </TypographySmall>
+                    </TypographySmall>
+                    <LuExternalLink size={16} />
+                </a>
                 <a
                     onClick={() => 
                         toast(
@@ -32,7 +32,7 @@ const Footer = () => {
                                         href="https://onur.dev"
                                         className="underline"
                                     >
-                                        Onur Şuyalçınkaya
+                                        Onur Şuyalçınkaya · Styling
                                     </a>
                                 </li>
                                 <li>
@@ -42,7 +42,7 @@ const Footer = () => {
                                         href="https://shadcn.com/"
                                         className="underline"
                                     >
-                                        shadncn
+                                        shadncn · UI Components
                                     </a>
                                 </li>
                                 <li>
@@ -52,7 +52,7 @@ const Footer = () => {
                                         href="https://emilkowal.ski/"
                                         className="underline"
                                     >
-                                        Emil Kowalski
+                                        Emil Kowalski · UI Components
                                     </a>
                                 </li>
                             </ul>

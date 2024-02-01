@@ -4,6 +4,7 @@ import Sidebar from "@/components/sidebar";
 import MenuContent from "@/components/menu-content";
 import { SOCIALS, commonMetadata } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import { Analytics } from '@vercel/analytics/react';
 
 export default function RootLayout({ children }) {
   return (
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
             {children}
           </main>
         </div>
+        <Analytics />
       </body>
     </html>
   );
@@ -43,7 +45,7 @@ export const metadata = {
     type: 'website',
     url: '/',
     siteName: commonMetadata.title,
-    locale: 'en_IE'
+    locale: 'en_US'
   },
   alternates: {
     canonical: '/'
@@ -51,7 +53,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     site: `@${SOCIALS.twitter.username}`,
-    creator: `@${SOCIALS.twitter.username}`
+    creator: `@${SOCIALS.twitter.username}`,
+    images: ['https://francescobarbieri.blog/img/ogImage.png'],
   },
   other: {
     pinterest: 'nopin'

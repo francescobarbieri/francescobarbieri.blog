@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { IconContext } from "react-icons";
 import { LuExternalLink } from 'react-icons/lu';
 
-const NavigationLink = ({ customKey, icon, label, href }) => {
+const NavigationLink = ({ icon, label, href }) => {
     const pathname = usePathname();
     const iconWeight = "bold";
     const iconCmp = icon ?? <LuExternalLink size={16} />
@@ -15,7 +15,6 @@ const NavigationLink = ({ customKey, icon, label, href }) => {
     if (!isInternal) {
         return (
             <a
-                key={customKey}
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -40,7 +39,6 @@ const NavigationLink = ({ customKey, icon, label, href }) => {
 
     return (
         <Link
-            key={customKey}
             href={href}
             className={
                 cn('group flex items-center justify-between rounded-lg p-2',

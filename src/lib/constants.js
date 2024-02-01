@@ -20,7 +20,7 @@ export const SOCIALS = {
     },
     linkedin: {
         label: 'LinkedIn',
-        href: 'www.linkedin.com/in/barbieri-francesco',
+        href: 'https://www.linkedin.com/in/barbieri-francesco',
         icon: <LuLinkedin size={16} />
     },
 }
@@ -41,6 +41,35 @@ export const LINKS = [
         label: 'Reading List',
         icon: <LuBook size={16} />
     }
+]
+
+// COVER SIZE: 350px x 530px (circa)
+export const BOOKS = [
+    {
+        title: "So Good They Can't Ignore You",
+        href: 'https://books.apple.com/it/book/so-good-they-cant-ignore-you/id721497019',
+        cover: "so-good-they-cant-ignore-you.png"
+    },
+    {
+        title: "Persuasive Technology",
+        href: 'https://books.apple.com/ie/book/persuasive-technology/id491708975',
+        cover: "persuasive-tech.png"
+    },
+    {
+        title: "The Filter Bubble",
+        href: 'https://books.apple.com/us/book/the-filter-bubble/id414403876',
+        cover: "the-filter-bubble.png"
+    },
+    {
+        title: "Deep Work",
+        href: 'https://books.apple.com/it/audiobook/deep-work/id1439867388',
+        cover: "deep-work.png"
+    },
+    {
+        title: "Psycology of Crowds",
+        href: 'https://books.apple.com/it/book/psychology-of-crowds/id890652323',
+        cover: "psycology-of-crowds.png"
+    },
 ]
 
 export const commonMetadata = {

@@ -1,8 +1,6 @@
 'use client'
 
 import { MobileDrawer } from "./drawer";
-import { MOBILE_SCROLL_THRESHOLD } from "@/lib/constants";
-import { useEffect, useState } from "react";
 import { TypographySmall } from "./ui/typography/Typography";
 
 const FloatingHeader = ({ scrollTitle }) => {

@@ -10,7 +10,7 @@ const MenuContent = () => {
             <div className="flex flex-col gap-4">
                 <a href="/" className="inline-flex items-center gap-2 p-2 hover:bg-gray-200 rounded-lg">
                     <img
-                        src=""
+                        src="/img/francesco-barbieri-pic.jpeg"
                         alt="Francesco Barbieri"
                         width={40}
                         height={40}
@@ -25,9 +25,9 @@ const MenuContent = () => {
 
                 <div className="flex flex-col gap-1">
                     {
-                        LINKS.map((link, linkIndex) => (
+                        LINKS.map(( link ) => (
                             <NavigationLink
-                                customKey={linkIndex}
+                                key={link.href}
                                 href={link.href}
                                 label={link.label}
                                 icon={link.icon}
@@ -45,7 +45,7 @@ const MenuContent = () => {
                     {
                         Object.values(SOCIALS).map( (link) => (
                             <NavigationLink
-                                customKey={link.href}
+                                key={link.href}
                                 href={link.href}
                                 label={link.label}
                                 icon={link.icon}

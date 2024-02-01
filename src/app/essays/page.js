@@ -1,6 +1,6 @@
 import Essays from "@/pages/Essays";
 
-const EssaysPage = () => {
+const EssaysPage = async () => {
     return (
         <Essays />
     );
