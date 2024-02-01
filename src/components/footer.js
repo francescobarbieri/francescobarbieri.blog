@@ -29,7 +29,7 @@ const Footer = () => {
                                     <a
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        href="https://onur.dev"
+                                        href="https://github.com/suyalcinkaya/onur.dev"
                                         className="underline"
                                     >
                                         Onur Şuyalçınkaya · Styling

@@ -19,7 +19,7 @@ const MenuContent = () => {
                     />
                     <div className="flex flex-col">
                         <span className="font-semibold tracking-tight">Francesco Barbieri</span>
-                        <span className="text-gray-600">Software Engineer</span>
+                        <span className="text-gray-600 italic">"Spearheading Ideas"</span>
                     </div>
                 </a>
 
