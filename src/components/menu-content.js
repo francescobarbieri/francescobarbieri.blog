@@ -23,7 +23,7 @@ const MenuContent = () => {
                     </div>
                 </a>
 
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1 transition-colors duration-200">
                     {
                         LINKS.map(( link ) => (
                             <NavigationLink
@@ -41,7 +41,7 @@ const MenuContent = () => {
                         Links
                     </TypographySmall>
                 </span>
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1 transition-colors duration-200">
                     {
                         Object.values(SOCIALS).map( (link) => (
                             <NavigationLink

@@ -39,7 +39,8 @@ const Home = async () => {
                 />
 
                 <TypographyP>
-                    Over the past decade, I've written content on my blog and newsletter. I try to keep things simple. You'll find writing about technologies I'm interested in at the time, or how I'm learning and growing in my career, sharing knowledge along the way.
+                    Beyond tech, I'm interested in global politics, analyzing geopolitical events and socio-economics implications.
+                    I'm a personal finance fellow, active member of <a href={"https://www.reddit.com/r/ItaliaPersonalFinance/"} target="_blank" rel="noopener" className="underline">r/ItaliaPersonalFinance</a> subreddit. Lastly I'm a passionate Formula1 fan, follwoing Scuderia Ferrari closely.
                 </TypographyP>
 
                 <Footer />
