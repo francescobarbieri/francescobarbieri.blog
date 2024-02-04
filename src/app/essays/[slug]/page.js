@@ -2,8 +2,7 @@ import { getAllPostsSlugs, getPost, getPostSeo } from "@/lib/contentful";
 import FloatingHeader from "@/components/floating-header";
 import { RichText } from "@/components/rich-text";
 import Footer from "@/components/footer";
-import { TypographyP } from "@/components/ui/typography/Typography";
-import supabase from "@/lib/supabase";
+import { TypographyH3, TypographyMuted, TypographyP } from "@/components/ui/typography/Typography";
 
 export async function generateStaticParams() {
     const routes = await getAllPostsSlugs();
@@ -17,20 +16,23 @@ export default async function essaySlug ({ params }) {
     const { slug } = params;
     const data = await getPost(slug);
 
+    const title = data[0].fields.title;
+    const date = new Date(data[0].sys.createdAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric' })
+
     return(
         <>
             <FloatingHeader scrollTitle={"Essays"}/>
             <div className="pt-12">
+                <div className="max-w-md mb-3">
+                    <TypographyH3> { title } </TypographyH3>
+                </div>
+                <div className="max-w-md mb-6 text-gray-400">
+                    <TypographyMuted> { date } </TypographyMuted>
+                </div>
                 <RichText
                     content={data[0].fields.body}
                 />
             </div>
-            <br /> <hr />
-            <TypographyP>
-                <span className="italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                </span>
-            </TypographyP>
             <Footer />
         </>
     )
