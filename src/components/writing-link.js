@@ -1,6 +1,5 @@
 'use client'
 
-import Link from "next/link";
 import { TypographySmall, TypographyP } from "./ui/typography/Typography";
 import ViewCount from "./view-count";
 

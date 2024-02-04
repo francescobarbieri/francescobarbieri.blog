@@ -87,3 +87,14 @@ export function TypographyMuted({ children }) {
         </p>
     )
 }
+
+export function TypographyHyperlink({ children }) {
+    return (
+        <a
+            rel="noopener"
+            target="_blank"
+            className="cursor-pointer text-[#001ecc] hover:underline">
+            { children }
+        </a>
+    )
+}

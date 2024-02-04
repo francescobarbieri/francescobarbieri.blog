@@ -1,6 +1,6 @@
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import { BLOCKS } from '@contentful/rich-text-types';
-import { TypographyH1, TypographyH2, TypographyH3, TypographyH4, TypographyP } from './ui/typography/Typography';
+import { BLOCKS, INLINES } from '@contentful/rich-text-types';
+import { TypographyBlockquote, TypographyH1, TypographyH2, TypographyH3, TypographyH4, TypographyHyperlink, TypographyP } from './ui/typography/Typography';
 
 const options =  {
     renderNode: {
@@ -9,6 +9,9 @@ const options =  {
         [BLOCKS.HEADING_3]: (node, children) => <TypographyH3>{ children }</TypographyH3>,
         [BLOCKS.HEADING_4]: (node, children) => <TypographyH4>{ children }</TypographyH4>,
         [BLOCKS.PARAGRAPH]: (node, children) => <TypographyP>{ children }</TypographyP>,
+        [BLOCKS.UL_LIST]: (node, children) => <div className='my-6 ml-6 list-disc [&>li]:mt-2'> { children } </div>,
+        [BLOCKS.QUOTE]: (node, children) => <TypographyBlockquote> { children } </TypographyBlockquote>,
+        [INLINES.HYPERLINK]: (node, children) => <TypographyHyperlink> { children }</TypographyHyperlink>,
         [BLOCKS.EMBEDDED_ASSET]: (node) => (
             <img
                 className='my-8 rounded-lg w-full'
