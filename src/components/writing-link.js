@@ -7,9 +7,9 @@ import ViewCount from "./view-count";
 const WritingLink = ({title, slug, date }) => {
 
     return (
-        <Link
+        <a
             href={"/essays/" + slug}
-            className="flex flex-col gap-1 transition-colors duration-200 rounded-lg p-3 border border-slate-200 hover:bg-gray-100"
+            className="flex flex-col gap-1 transition-colors duration-150 rounded-lg p-3 border border-slate-200 hover:bg-gray-100"
         >   
             <TypographyP>
                 <span>{ title }</span>
@@ -24,7 +24,7 @@ const WritingLink = ({title, slug, date }) => {
                     slug={slug}
                 />
             </div>
-        </Link>
+        </a>
     );
 }
  
