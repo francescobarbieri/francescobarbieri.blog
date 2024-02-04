@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils"
+
 export function TypographyH1({ children }) {
     return (
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
@@ -30,9 +32,9 @@ export function TypographyH4({ children }) {
     )
 }
 
-export function TypographyP({ children }) {
+export function TypographyP({ className = "", children }) {
     return (
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className={cn("leading-7 [&:not(:first-child)]:mt-6", className)}>
             { children }
         </p>
     )
