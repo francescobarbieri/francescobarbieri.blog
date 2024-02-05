@@ -1,11 +1,34 @@
 'use client'
 
-import usePostViews from "@/hooks/usePostViews";
 import { useEffect, useState } from "react";
+import supabase from '@/lib/supabase';
 
 const ViewCount = ({ slug }) => {
-    const {views, isLoading, error } = usePostViews(slug);
+    const [views, setViews] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
     const [showViews, setShowViews] = useState(false);
+
+    useEffect(() => {
+        const fetchPostViews = async() => {
+            try {
+                const { data, error } = await supabase
+                .from('Posts')
+                .select('slug, views');
+
+                const postViews = data.find( item => item.slug === slug)?.views ?? null;
+                setViews(postViews);
+            } catch (error) {
+                setError(error);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+
+        if(slug) {
+            fetchPostViews();
+        }
+    }, [slug]);
 
     useEffect( () => {
         if(!isLoading) {
