@@ -1,3 +1,5 @@
+'use client'
+
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { BLOCKS, INLINES } from '@contentful/rich-text-types';
 import { TypographyBlockquote, TypographyH1, TypographyH2, TypographyH3, TypographyH4, TypographyHyperlink, TypographyP } from './ui/typography/Typography';
@@ -11,7 +13,7 @@ const options =  {
         [BLOCKS.PARAGRAPH]: (node, children) => <TypographyP>{ children }</TypographyP>,
         [BLOCKS.UL_LIST]: (node, children) => <div className='my-6 ml-6 list-disc [&>li]:mt-2'> { children } </div>,
         [BLOCKS.QUOTE]: (node, children) => <TypographyBlockquote> { children } </TypographyBlockquote>,
-        [INLINES.HYPERLINK]: (node, children) => <TypographyHyperlink> { children }</TypographyHyperlink>,
+        [INLINES.HYPERLINK]: (node, children) => <TypographyHyperlink href={node.data.uri}>{ children }</TypographyHyperlink>,
         [BLOCKS.EMBEDDED_ASSET]: (node) => (
             <img
                 className='my-8 rounded-lg w-full'

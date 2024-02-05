@@ -1,4 +1,4 @@
-import { TypographyH3, TypographyInlineCode, TypographyP } from "@/components/ui/typography/Typography";
+import { TypographyH3, TypographyHyperlink, TypographyInlineCode, TypographyP } from "@/components/ui/typography/Typography";
 import Mosaic from "@/components/mosaic";
 import Footer from "@/components/footer";
 import FloatingHeader from "@/components/floating-header";
@@ -40,7 +40,7 @@ const Home = async () => {
 
                 <TypographyP>
                     Beyond tech, I'm interested in global politics, analyzing geopolitical events and socio-economics implications.
-                    I'm a personal finance fellow, active member of <a href={"https://www.reddit.com/r/ItaliaPersonalFinance/"} target="_blank" rel="noopener" className="underline">r/ItaliaPersonalFinance</a> subreddit. Lastly I'm a passionate Formula1 fan, follwoing Scuderia Ferrari closely.
+                    I'm a personal finance fellow, active member of <TypographyHyperlink href="https://www.reddit.com/r/ItaliaPersonalFinance/">r/ItaliaPersonalFinance</TypographyHyperlink> subreddit. Lastly I'm a passionate Formula1 fan, follwoing Scuderia Ferrari closely.
                 </TypographyP>
 
                 <Footer />

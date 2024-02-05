@@ -8,15 +8,15 @@ import { TypographyH4 } from "./ui/typography/Typography";
 const LoadingSkeleton = () => {
     return (
         <>
-            <div className="w-full h-[82px] rounded-lg p-3 border border-slate-200 flex flex-col justify-between">
+            <div className="w-full h-[90px] rounded-lg p-4 pr-16 border border-slate-200 flex flex-col justify-between">
                 <Skeleton className="w-2/3 h-4 mt-1" />
                 <Skeleton className="w-1/4 h-4" />
             </div>
-            <div className="w-full h-[82px] rounded-lg p-3 border border-slate-200 flex flex-col justify-between">
+            <div className="w-full h-[90px] rounded-lg p-4 pr-16 border border-slate-200 flex flex-col justify-between">
                 <Skeleton className="w-2/3 h-4 mt-1" />
                 <Skeleton className="w-1/4 h-4" />
             </div>
-            <div className="w-full h-[82px] rounded-lg p-3 border border-slate-200 flex flex-col justify-between">
+            <div className="w-full h-[90px] rounded-lg p-4 pr-16 border border-slate-200 flex flex-col justify-between">
                 <Skeleton className="w-2/3 h-4 mt-1" />
                 <Skeleton className="w-1/4 h-4" />
             </div>

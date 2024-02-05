@@ -1,4 +1,7 @@
+'use client'
+
 import { cn } from "@/lib/utils"
+import { LuExternalLink } from "react-icons/lu"
 
 export function TypographyH1({ children }) {
     return (
@@ -90,13 +93,10 @@ export function TypographyMuted({ children }) {
     )
 }
 
-export function TypographyHyperlink({ children }) {
+export function TypographyHyperlink({ children, href }) {
     return (
-        <a
-            rel="noopener"
-            target="_blank"
-            className="cursor-pointer text-[#001ecc] hover:underline">
-            { children }
+        <a href={href} rel="noopener noreferrer" target="_blank" className="text-[#001ecc] hover:underline">
+            { children  }
         </a>
     )
 }

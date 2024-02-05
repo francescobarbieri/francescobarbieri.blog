@@ -17,7 +17,8 @@ export default async function essaySlug ({ params }) {
     const data = await getPost(slug);
 
     const title = data[0].fields.title;
-    const date = new Date(data[0].sys.createdAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric' })
+    const date = new Date(data[0].sys.createdAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
+    const content = data[0].fields.body;
 
     return(
         <>
@@ -29,9 +30,7 @@ export default async function essaySlug ({ params }) {
                 <div className="max-w-md mb-6 text-gray-400">
                     <TypographyMuted> { date } </TypographyMuted>
                 </div>
-                <RichText
-                    content={data[0].fields.body}
-                />
+                <RichText content={content} />
             </div>
             <Footer />
         </>
