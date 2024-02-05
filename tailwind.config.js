@@ -15,11 +15,6 @@ module.exports = {
       screens: {
         "2xl": "1400px",
       },
-      colors: {
-        'link-blue': {
-          DEFAULT: '#3f57e0'
-        }
-      }
     },
     extend: {
       keyframes: {
