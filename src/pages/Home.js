@@ -20,13 +20,7 @@ const Home = async () => {
                     hey, I'm Francesco 👋
                 </TypographyH3>
                 <TypographyP>
-                    Currently working as a Freelance Developer while studying, I'm prioritizing valuable work experience over traditional student jobs. Committed to continuous growth. My aim is to seek new experiences, meet exceptional individuals, and push beyond the ordinary context. Learn more about me 
-                    <a  
-                        href={SOCIALS.linkedin.href} 
-                        target="_blank"
-                        rel="noopener">
-                        <TypographyInlineCode>here</TypographyInlineCode>
-                    </a>
+                    Currently working as a Freelance Developer while studying, I'm prioritizing valuable work experience over traditional student jobs. Committed to continuous growth. My aim is to seek new experiences, meet exceptional individuals, and push beyond the ordinary context. Learn more about me <TypographyHyperlink href={SOCIALS.linkedin.href}> {" here"} </TypographyHyperlink>
                 </TypographyP>
                 <Mosaic />
                 <TypographyP>

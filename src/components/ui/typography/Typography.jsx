@@ -71,9 +71,9 @@ export function TypographyInlineCode({ children }) {
     )
 }
 
-export function TypographySmall({ children }) {
+export function TypographySmall({ className = "", children }) {
     return (
-        <small className="text-sm font-medium leading-none">
+        <small className={cn("text-sm font-medium leading-none", className)}>
             { children }
         </small>
     )
