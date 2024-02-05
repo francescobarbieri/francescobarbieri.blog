@@ -1,7 +1,10 @@
+'use client'
+
 import FloatingHeader from "@/components/floating-header";
 import Footer from "@/components/footer";
 import { TypographyH3, TypographyP, TypographySmall } from "@/components/ui/typography/Typography";
 import { BOOKS } from "@/lib/constants";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger, } from "@/components/ui/tooltip"
 
 const ReadingList = () => {
 
@@ -26,13 +29,21 @@ const ReadingList = () => {
                                 target="_blank"
                                 className="hover:underline"
                             >
-                                <div
-                                    className="w-full h-60 bg-center rounded-lg bg-contain bg-no-repeat bg-[#f7f7f7]"
-                                    style={{ backgroundImage: `url(img/books/${book.cover})`}}
-                                />
-                                <TypographySmall>
-                                    {book.title}
-                                </TypographySmall>
+                                <TooltipProvider>
+                                    <Tooltip>
+                                        <TooltipTrigger asChild>
+                                            <div
+                                                className="w-full h-60 bg-center rounded-lg bg-contain bg-no-repeat bg-[#f7f7f7] hover:border-gray-300 border border-[#f7f7f7]" 
+                                                style={{ backgroundImage: `url(img/books/${book.cover})`}}
+                                            />
+                                        </TooltipTrigger>
+                                        <TooltipContent>
+                                            <TypographySmall>
+                                                {book.title}
+                                            </TypographySmall>
+                                        </TooltipContent>
+                                    </Tooltip>
+                                </TooltipProvider>
                             </a>
                         ))
                     }
