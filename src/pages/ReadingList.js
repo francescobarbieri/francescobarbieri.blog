@@ -25,6 +25,7 @@ const ReadingList = () => {
                     {
                         BOOKS.map( (book) => (
                             <a 
+                                key={book.href}
                                 href={book.href}
                                 target="_blank"
                                 className="hover:underline"
