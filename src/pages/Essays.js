@@ -3,7 +3,7 @@ import Footer from "@/components/footer";
 import { TypographyH3, TypographyH4, TypographyP } from "@/components/ui/typography/Typography";
 import WritingLinkList from "@/components/writing-link-list";
 
-const Essays = async () => {
+const Essays = () => {
 
     return (
         <>

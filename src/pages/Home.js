@@ -5,7 +5,7 @@ import FloatingHeader from "@/components/floating-header";
 import { SOCIALS } from "@/lib/constants";
 import WritingLinkList from "@/components/writing-link-list";
 
-const Home = async () => {
+const Home = () => {
     const list = {
         slug1: 'test-post',
         slug2: 'main-post',
