@@ -24,38 +24,9 @@ const Footer = () => {
                 <a
                     onClick={() => 
                         toast(
-                            <ul className="ml-6 list-disc [&>li]:mt-2">
-                                <li>
-                                    <a
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        href="https://github.com/suyalcinkaya/onur.dev"
-                                        className="underline"
-                                    >
-                                        Onur Şuyalçınkaya · Styling
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        href="https://shadcn.com/"
-                                        className="underline"
-                                    >
-                                        shadncn · UI Components
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        href="https://emilkowal.ski/"
-                                        className="underline"
-                                    >
-                                        Emil Kowalski · UI Components
-                                    </a>
-                                </li>
-                            </ul>
+                            <TypographySmall>
+                                Special tanks to <a className="underline" href="https://github.com/suyalcinkaya/onur.dev">Onur Şuyalçınkaya</a> for the open-source design inspiration. Since I'm not a designer, I've incorporated elements of his design into this project - mainly in the navbar - to enhance its visual appeal and functionality.
+                            </TypographySmall>
                         , {
                             duration: 5000,
                             icon: <LuHeartHandshake />
