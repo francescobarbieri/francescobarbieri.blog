@@ -26,11 +26,13 @@ const Home = async () => {
                 <TypographyP>
                     I write about events and topics that strike me. In my essays, you'll find reflections on the subjects that make me reflect the most. These often include technologies I'm currently interested in or insights into how I'm learning and growing in my career.
                 </TypographyP>
-                <br></br>
 
+                {/*
+                <br></br>
                 <WritingLinkList
                     slugList={list}
                 />
+                */}
 
                 <TypographyP>
                     Beyond tech, I'm interested in global politics, analyzing geopolitical events and socio-economics implications.

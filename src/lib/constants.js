@@ -31,11 +31,13 @@ export const LINKS = [
         label: 'Home',
         icon: <LuCircle size={16} />
     },
+    /*
     {
         href: '/essays',
         label: 'Essays',
         icon: <LuPencilLine size={16} />
     },
+    */
     {
         href: '/reading-list',
         label: 'Reading List',
