@@ -14,7 +14,7 @@ My current personal websites repository. Available at [francescobarbieri.blog](h
 
 ## Credits
 
-- Special tanks to [onur.dev](https://github.com/suyalcinkaya/onur.dev) for the open-source design inspiration. Since I'm not a designer, I've incorporated elements of his design into this project - mainly in the navbar - to enhance its visual appeal and functionality.
+Special tanks to [onur.dev](https://github.com/suyalcinkaya/onur.dev) for the open-source design inspiration. Since I'm not a designer, I've incorporated elements of his design into this project - mainly in the navbar - to enhance its visual appeal and functionality.
 
 ## Built With
 
