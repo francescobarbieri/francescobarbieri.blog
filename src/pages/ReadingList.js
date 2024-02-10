@@ -17,7 +17,7 @@ const ReadingList = () => {
                 </TypographyH3>
 
                 <TypographyP>
-                    A curated collection of books I've read spanning technology, personal improvement, career development, and finance. These are inspiring reads that have left a lsating impact on me, offering valuable insights.
+                    A curated collection of books I've read spanning technology, personal improvement, career development, and finance. These are inspiring reads that have left valuable insights.
                 </TypographyP>
                 <br />
                 <hr />

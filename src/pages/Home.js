@@ -36,7 +36,7 @@ const Home = () => {
 
                 <TypographyP>
                     Beyond tech, I'm interested in global politics, analyzing geopolitical events and socio-economics implications.
-                    I'm a personal finance fellow, active member of <TypographyHyperlink href="https://www.reddit.com/r/ItaliaPersonalFinance/">r/ItaliaPersonalFinance</TypographyHyperlink> subreddit. Lastly I'm a passionate Formula1 fan, follwoing Scuderia Ferrari closely.
+                    I'm a personal finance fellow, active member of <TypographyHyperlink href="https://www.reddit.com/r/ItaliaPersonalFinance/">r/ItaliaPersonalFinance</TypographyHyperlink> subreddit. Lastly I'm a passionate Formula1 fan, following Scuderia Ferrari closely.
                 </TypographyP>
 
                 <Footer />
